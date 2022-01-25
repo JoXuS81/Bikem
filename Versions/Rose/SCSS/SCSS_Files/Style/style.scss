@@ -1,0 +1,5014 @@
+/* 
+
+TABLE OF CONTENTS
+
+1. Fonts
+2. Mixins
+3. Variables
+4. Body
+ 4.1 A
+ 4.2 Content
+  4.2.1 Imports
+  4.2.2 Search Area
+ 4.3 Content, About
+  4.3.1 About, Services
+   4.3.1.1 About Area
+    4.3.1.1.1 Bike Img
+     4.3.1.1.1.1 Image
+      4.3.1.1.1.1.1 Img
+    4.3.1.1.2 Decode
+     4.3.1.1.2.1 Heading
+      4.3.1.1.2.1.1 H1
+       4.3.1.1.2.1.1.1 Span
+     4.3.1.1.2.2 Info
+      4.3.1.1.2.2.1 H2
+     4.3.1.1.2.3 Small Heading
+      4.3.1.1.2.3.1 H5
+   4.3.1.2 Info Track
+    4.3.1.2.1 Info Wrapper
+     4.3.1.2.1.1 H2
+     4.3.1.2.1.2 Info Word
+     4.3.1.2.1.3 Line
+   4.3.1.3 Services
+    4.3.1.3.1 H2
+   4.3.1.4 Services Area
+    4.3.1.4.1 Wrapper
+     4.3.1.4.1.1 Button
+      4.3.1.4.1.1.1 A
+     4.3.1.4.1.2 Heading
+      4.3.1.4.1.2.1 H2
+     4.3.1.4.1.3 Icon
+      4.3.1.4.1.3.1 Img
+     4.3.1.4.1.4 Info
+      4.3.1.4.1.4.1 H4
+ 4.4 Content Blog
+   4.4.1 Blog Area
+    4.4.1.1 Wrapper
+     4.4.1.1.1 Left
+      4.4.1.1.1.1 Wrapper Left
+       4.4.1.1.1.1.1 Author
+        4.4.1.1.1.1.1.1 Author Info
+         4.4.1.1.1.1.1.1.1 Author Area
+          4.4.1.1.1.1.1.1.1.1 H3
+          4.4.1.1.1.1.1.1.1.2 H4
+          4.4.1.1.1.1.1.1.1.3 Name
+         4.4.1.1.1.1.1.1.2 Image
+       4.4.1.1.1.1.2 Comments Area
+        4.4.1.1.1.1.2.1 Comment
+         4.4.1.1.1.1.2.1.1 First Comment
+         4.4.1.1.1.1.2.1.2 H4
+        4.4.1.1.1.1.2.2 Comment Form
+         4.4.1.1.1.1.2.2.1 Form
+          4.4.1.1.1.1.2.2.1.1 Commenting Form
+          4.4.1.1.1.1.2.2.1.2 Comment Submit
+          4.4.1.1.1.1.2.2.1.3 Input Mail
+          4.4.1.1.1.1.2.2.1.4 Input Text
+          4.4.1.1.1.1.2.2.1.5 Mail Form
+          4.4.1.1.1.1.2.2.1.6 Name Form
+         4.4.1.1.1.1.2.2.2 H2
+        4.4.1.1.1.1.2.3 Top
+         4.4.1.1.1.1.2.3.1 H3
+         4.4.1.1.1.1.2.3.2 H4
+       4.4.1.1.1.1.3 Date
+        4.4.1.1.1.1.3.1 H4
+       4.4.1.1.1.1.4 Heading
+        4.4.1.1.1.1.4.1 H1
+       4.4.1.1.1.1.5 Image Top
+        4.4.1.1.1.1.5.1 Img
+       4.4.1.1.1.1.6 Info
+        4.4.1.1.1.1.6.1 H3
+       4.4.1.1.1.1.7 Info Bottom
+        4.4.1.1.1.1.7.1 H3
+       4.4.1.1.1.1.8 Quotes
+        4.4.1.1.1.1.8.1 Quotes Img
+         4.4.1.1.1.1.8.1.1 Img
+        4.4.1.1.1.1.8.2 Text
+         4.4.1.1.1.1.8.2.1 H3
+     4.4.1.1.2 Right
+      4.4.1.1.2.1 Right Area
+       4.4.1.1.2.1.1 Categories Area
+        4.4.1.1.2.1.1.1 Elements
+        4.4.1.1.2.1.1.2 Elements First
+        4.4.1.1.2.1.1.3 H4
+       4.4.1.1.2.1.2 Follow Area
+       4.4.1.1.2.1.2.1 A
+        4.4.1.1.2.1.2.1.1 Img
+        4.4.1.1.2.1.2.2 H4
+       4.4.1.1.2.1.3 Posts Area
+        4.4.1.1.2.1.3.1 H4
+        4.4.1.1.2.1.3.2 Posts Bottom
+         4.4.1.1.2.1.3.2.1 Post Img
+          4.4.1.1.2.1.3.2.1.1 Img
+        4.4.1.1.2.1.3.3 Post Wrapper
+         4.4.1.1.2.1.3.3.1 Post Img
+          4.4.1.1.2.1.3.3.1.1 Img
+       4.4.1.1.2.1.4 Tags Area
+        4.4.1.1.2.1.4.1 H4
+        4.4.1.1.2.1.4.2 Tags Elements
+ 4.5 H1, H2, H3, H4, H5, H6
+5. Different Screen Sizes
+
+*/
+
+
+//Fonts
+// Jura
+@font-face {
+    font-family:jura;
+    src:url("../../../Fonts/Jura/Jura-Regular.ttf");
+}
+
+// Megrim
+@font-face {
+    font-family:megrim;
+    src:url("../../../Fonts/Megrim/Megrim-Regular.ttf");
+}
+
+// Rajdhani
+@font-face {
+    font-family:rajdhani;
+    src:url("../../../Fonts/Rajdhani/Rajdhani-Regular.ttf");
+}
+
+// Raleway Dots
+@font-face {
+    font-family:raleway_dots;
+    src:url("../../../Fonts/Raleway Dots/RalewayDots-Regular.ttf");
+}
+
+// Text Me One
+@font-face {
+    font-family:text_me_one;
+    src:url("../../../Fonts/Text Me One/TextMeOne-Regular.ttf");
+}
+
+
+// Mixins
+@mixin h1 {
+    color:$lightVersion;
+    font-family:raleway_dots;
+    font-size:58px;
+    padding:0 0 0 120px;
+    // Add additional element
+    // Add additional element
+    // Add additional element
+}
+@mixin h2 {
+    color:$lightVersion;
+    display:inline-block;
+    font-family:text_me_one;
+    font-size:42px;
+    margin:0;
+    padding:0;
+}
+@mixin h3 {
+    color:$lightVersion;
+    display:inline-block;
+    font-family:text_me_one;
+    font-size:30px;
+    margin-top:36px;
+}
+@mixin h4 {
+    color:$lightVersion;
+    font-family:text_me_one;
+    font-size:30px;
+    margin-top:48px;
+}
+@mixin h5 {
+    color:$lightVersion;
+    font-family:megrim;
+    font-size:24px;
+}
+@mixin h6 {
+}
+@mixin a {
+    font-size:16px;
+}
+
+
+@mixin h1_small {
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+
+
+@mixin h1_455 {
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+
+
+@mixin h1_607 {
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+
+
+@mixin h1_810 {
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+
+
+@mixin h1_1080 {
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+
+
+@mixin h1_1199 {
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+
+
+@mixin h1_2400 {
+    font-size:72px;
+    padding:0 0 0 150px;
+    // Add additional element
+    // Add additional element
+    // Add additional element
+}
+
+
+@mixin h1_3000 {
+    font-size:90px;
+    padding:0 0 0 187px;
+    // Add additional element
+    // Add additional element
+    // Add additional element
+}
+
+
+@mixin h1_3750 {
+    font-size:112px;
+    padding:0 0 0 234px;
+    // Add additional element
+    // Add additional element
+    // Add additional element
+}
+
+
+@mixin h1_4690 {
+    font-size:140px;
+    padding:0 0 0 293px;
+    // Add additional element
+    // Add additional element
+    // Add additional element
+}
+
+
+@mixin h2_2400 {
+    font-size:52px;
+}
+
+
+@mixin h2_3000 {
+    font-size:65px;
+}
+
+
+@mixin h2_3750 {
+    font-size:81px;
+}
+
+
+@mixin h2_4690 {
+    font-size:101px;
+}
+
+
+@mixin h3_2400 {
+    font-size:37px;
+}
+
+
+@mixin h3_3000 {
+    font-size:46px;
+}
+
+
+@mixin h3_3750 {
+    font-size:57px;
+}
+
+
+@mixin h3_4690 {
+    font-size:71px;
+}
+
+
+@mixin h4_2400 {
+    font-size:37px;
+}
+
+
+@mixin h4_3000 {
+    font-size:46px;
+}
+
+
+@mixin h4_3750 {
+    font-size:57px;
+}
+
+
+@mixin h4_4690 {
+    font-size:71px;
+}
+
+
+@mixin h5_2400 {
+    font-size:30px;
+}
+
+
+@mixin h5_3000 {
+    font-size:37px;
+}
+
+
+@mixin h5_3750 {
+    font-size:46px;
+}
+
+
+@mixin h5_4690 {
+    font-size:57px;
+}
+
+
+@mixin h6_2400 {
+}
+
+
+@mixin h6_3000 {
+}
+
+
+@mixin h6_3750 {
+}
+
+
+@mixin h6_4690 {
+}
+
+
+@mixin a_2400 {
+    font-size:20px;
+}
+
+
+@mixin a_3000 {
+    font-size:25px;
+}
+
+
+@mixin a_3750 {
+    font-size:25px;
+}
+
+
+@mixin a_4690 {
+    font-size:31px;
+}
+
+
+// Variables
+$aboutMission:#77a49e;
+$black:#000000;
+$button:#2e2e2e;
+$buttonHover:#ff78ae;
+$dark:#393939;
+$darker:#08090B;
+$ellipse:#212121;
+$error:#fe8b8e;
+$formLine:#959595;
+$green:#1d4237;
+$grey:#7f7f80;
+$headerBikem:#010101;
+$info:#1c1c1c;
+$lagoon:#4755b8;
+$lightVersion:#eaecf0;
+$menu:#828283;
+$mobileBackground:rgba(0, 0, 0, 0.95);
+$optionCircle:#343434;
+$red:#ff0066;
+$shopButton:#ff77ad;
+$sticky:rgba(8,26,35,0.95);
+$stickyLight:rgba(168, 168, 168, 0.85);
+$stickyRose:rgba(0, 0, 0, 0.85);
+$submitComment:#94cab3;
+$submitted:#97eedd;
+$white:#ffffff;
+
+
+/* Body */
+body {
+    @import "../Sections/loader";
+    background:$darker;
+    overflow-x:hidden;
+
+
+    // A
+    a {
+        @include a;
+    }
+
+    // Content
+    .content {
+        @import "../Sections/about";
+        @import "../Sections/blog";
+        @import "../Sections/contact";
+        @import "../Sections/footer";
+        @import "../Sections/header";
+        @import "../Sections/shop";
+        .back {
+            align-items:center;
+            display:flex;
+            height:100vh;
+            left:0;
+            position:fixed;
+            top:0;
+            z-index:1;
+        }
+        // Search Area
+        .search_area {
+            background:$darker;
+            display:none;
+            width:100%;
+            // Search Container
+            .search_container {
+                height:100%;
+                width:100%;
+                // Form
+                form {
+                    width:100%;
+                    // Field
+                    .field {
+                        background:$darker;
+                        border:1px solid $red;
+                        border-radius:10px;
+                        color:$lightVersion;
+                        font-family:rajdhani;
+                        font-size:20px;
+                        height:75px;
+                        outline:none;
+                        width:75%;
+                    }
+                    // Input
+                    input[type = text] {
+                        padding-left:30px;
+                    }
+                }
+                // Search Section
+                .search_section {
+                    display:flex;
+                    justify-content:center;
+                    margin-top:100px;
+                    // Options
+                    .options {
+                        width:300px;
+                        // Block
+                        .block {
+                            align-items:center;
+                            border-radius:10px;
+                            display:flex;
+                            height:50px;
+                            justify-content:center;
+                            margin-top:25px;
+                            width:300px;
+                            // A
+                            a {
+                                color:$lightVersion;
+                                font-family:rajdhani;
+                                font-size:20px;
+                                margin:0;
+                                padding:0;
+                                text-align:center;
+                                text-decoration:none;
+                            }
+                        }
+                    }
+                }
+                // Top Area
+                .top_area {
+                    // Close Area
+                    .close_area {
+                        margin-right:120px;
+                        // Close
+                        .close {
+                            cursor:pointer;
+                        }
+                    }
+                    // H1
+                    h1 {
+                        display:inline-block;
+                        margin-bottom:0;
+                        padding:120px 0 120px 120px;
+                    }
+                }
+            }
+        }
+    }
+
+
+    // Content About
+    .contentAbout {
+        // About Services
+        .aboutServices {
+            margin:136px 163px 136px 163px;
+            // About Area
+            .aboutArea {
+                // Decode
+                .decode {
+                    // Heading
+                    .heading {
+                        margin-top:45px;
+                        // H1
+                        h1 {
+                            font-family:rajdhani;
+                            font-size:60px;
+                            font-weight:bold;
+                            margin:0;
+                            padding:0;
+                            width:532px;
+                            // Span
+                            span {
+                                color:$red;
+                            }
+                        }
+                    }
+                    // Info
+                    .info {
+                        margin-top:24px;
+                        // H2
+                        h2 {
+                            font-family:rajdhani;
+                            font-size:35px;
+                            font-weight:600;
+                            width:600px;
+                        }
+                    }
+                    // Small Heading
+                    .smallHeading {
+                        // H5
+                        h5 {
+                            background:$ellipse;
+                            border-radius:7px;
+                            color:$red;
+                            display:inline-block;
+                            font-family:rajdhani;
+                            font-size:20px;
+                            font-weight:bold;
+                            margin:0;
+                            padding:0;
+                            padding-bottom:12px;
+                            padding-left:27px;
+                            padding-right:27px;
+                            padding-top:12px;
+                        }
+                    }
+                }
+            }
+            // Info Track
+            .infoTrack {
+                background:$info;
+                margin-top:142px;
+                // Info Wrapper
+                .infoWrapper {
+                    height:250px;
+                    // H2
+                    h2 {
+                        color:$red;
+                        display:inline-block;
+                        font-family:rajdhani;
+                        font-size:80px;
+                        font-weight:bold;
+                        margin:0;
+                        margin-top:42px;
+                        padding:0;
+                        text-align:center;
+                    }
+                    // Info Word
+                    .infoWord {
+                        color:$white;
+                        display:inline-block;
+                        font-family:rajdhani;
+                        font-size:50px;
+                        font-weight:bold;
+                        margin-bottom:42px;
+                        margin-top:10px;
+                        text-align:center;
+                    }
+                    // Line
+                    .line {
+                        background:$red;
+                        bottom:187px;
+                        height:125px;
+                        position:relative;
+                        width:1px;
+                    }
+                }
+            }
+            // Services
+            .services {
+                // H2
+                h2 {
+                    font-family:rajdhani;
+                    font-size:60px;
+                    font-weight:bold;
+                    margin-top:237px;
+                    text-align:center;
+                }
+            }
+            // Services Area
+            .servicesArea {
+                margin-top:99px;
+                // Wrapper
+                .wrapper {
+                    // Button
+                    .button {
+                        margin-top:49px;
+                        // A
+                        a {
+                            background:$button;
+                            border-radius:17px;
+                            color:$white;
+                            display:inline-block;
+                            font-family:rajdhani;
+                            font-size:25px;
+                            font-weight:600;
+                            margin:0;
+                            padding:0;
+                            padding-bottom:29px;
+                            padding-left:58px;
+                            padding-right:58px;
+                            padding-top:29px;
+                            text-decoration:none;
+                        }
+                    }
+                    // Heading
+                    .heading {
+                        margin:0;
+                        padding:0;
+                        // H2
+                        h2 {
+                            font-family:rajdhani;
+                            font-size:40px;
+                            font-weight:initial;
+                            margin:0;
+                            margin-top:33px;
+                            padding:0;
+                        }
+                    }
+                    // Info Services
+                    .infoServices {
+                        margin-top:18px;
+                        // H4
+                        h4 {
+                            font-family:rajdhani;
+                            font-size:25px;
+                            margin:0;
+                            padding:0;
+                            text-align:center;
+                            width:400px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    // Content Blog
+    .contentBlog {
+        // Blog Area
+        .blogArea {
+            // Wrapper
+            .wrapper {
+                // Left
+                .left {
+                    // Wrapper Left
+                    .wrapperLeft {
+                        margin-left:200px;
+                        margin-top:125px;
+                        // Author
+                        .author {
+                            border:1px solid $lightVersion;
+                            height:253px;
+                            margin-top:101px;
+                            width:640px;
+                            // Author Info
+                            .authorInfo {
+                                align-items:center;
+                                display:flex;
+                                height:100%;
+                                width:100%;
+                                // Author Area
+                                .authorArea {
+                                    width:65%;
+                                    // H3
+                                    h3 {
+                                        font-family:rajdhani;
+                                        font-size:30px;
+                                        font-weight:bold;
+                                        margin:0;
+                                        margin-left:63px;
+                                        padding:0;
+                                    }
+                                    // H4
+                                    h4 {
+                                        font-family:rajdhani;
+                                        font-size:25px;
+                                        margin:0;
+                                        margin-left:63px;
+                                        margin-top:4px;
+                                        padding:0;
+                                        width:300px;
+                                    }
+                                    // Name
+                                    .name {
+                                        display:block;
+                                        font-family:rajdhani;
+                                        font-size:30px;
+                                        font-weight:bold;
+                                        margin:0;
+                                        margin-left:63px;
+                                        margin-top:3px;
+                                        padding:0;
+                                    }
+                                }
+                                // Image
+                                .image {
+                                    width:35%;
+                                    // Img
+                                    img {
+                                        margin-left:25px;
+                                    }
+                                }
+                            }
+                        }
+                        // Comments Area
+                        .commentsArea {
+                            margin-top:119px;
+                            // Comment
+                            .comment {
+                                margin-top:78px;
+                                // First Comment
+                                .firstComment {
+                                    font-family:rajdhani;
+                                    font-size:25px;
+                                    font-weight:bold;
+                                    margin:0;
+                                    margin-top:16px;
+                                    padding:0;
+                                }
+                                // H4
+                                h4 {
+                                    font-family:rajdhani;
+                                    font-size:25px;
+                                    font-weight:bold;
+                                    margin:0;
+                                    padding:0;
+                                }
+                            }
+                            // Comment Form
+                            .commentForm {
+                                margin-top:186px;
+                                // Form
+                                form {
+                                    margin-top:132px;
+                                    // Commenting Form
+                                    .commentingForm {
+                                        background:$darker;
+                                        border-bottom:1px solid $lightVersion;
+                                        border-left:none;
+                                        border-right:none;
+                                        border-top:none;
+                                        color:$white;
+                                        font-family:rajdhani;
+                                        font-size:25px;
+                                        font-weight:bold;
+                                        height:187px;
+                                        margin:0;
+                                        margin-top:77px;
+                                        outline:none;
+                                        padding:0;
+                                        width:640px;
+                                    }
+                                    // Comment Submit
+                                    .commentSubmit {
+                                        background:$red;
+                                        border:none;
+                                        border-radius:15px;
+                                        color:$white;
+                                        display:block;
+                                        font-family:rajdhani;
+                                        font-size:25px;
+                                        font-weight:bold;
+                                        margin-bottom:125px;
+                                        margin-top:102px;
+                                        padding-bottom:32px;
+                                        padding-left:70px;
+                                        padding-right:70px;
+                                        padding-top:32px;
+                                    }
+                                    // Input
+                                    input[type = email] {
+                                        padding-bottom:6px;
+                                    }
+                                    // Input
+                                    input[type = text] {
+                                        padding-bottom:6px;
+                                    }
+                                    // Mail Form
+                                    .mailForm {
+                                        background:$darker;
+                                        border-bottom:1px solid $lightVersion;
+                                        border-left:none;
+                                        border-right:none;
+                                        border-top:none;
+                                        color:$lightVersion;
+                                        font-family:rajdhani;
+                                        font-size:25px;
+                                        font-weight:bold;
+                                        margin:0;
+                                        margin-top:77px;
+                                        outline:none;
+                                        padding:0;
+                                        width:640px;
+                                    }
+                                    // Placeholder
+                                    ::-moz-placeholder {
+                                        color:$lightVersion;
+                                        opacity:1;
+                                    }
+                                    // Name Form
+                                    .nameForm {
+                                        background:$darker;
+                                        border-bottom:1px solid $lightVersion;
+                                        border-left:none;
+                                        border-right:none;
+                                        border-top:none;
+                                        color:$lightVersion;
+                                        font-family:rajdhani;
+                                        font-size:25px;
+                                        font-weight:bold;
+                                        margin:0;
+                                        outline:none;
+                                        padding:0;
+                                        width:640px;
+                                    }
+                                }
+                                // H2
+                                h2 {
+                                    font-family:rajdhani;
+                                    font-size:35px;
+                                    font-weight:bold;
+                                    margin:0;
+                                    padding:0;
+                                }
+                            }
+                            // Top
+                            .top {
+                                // H3
+                                h3 {
+                                    font-family:rajdhani;
+                                    font-size:30px;
+                                    font-weight:bold;
+                                    margin:0;
+                                    padding:0;
+                                }
+                                // H4
+                                h4 {
+                                    font-family:rajdhani;
+                                    font-size:25px;
+                                    font-weight:bold;
+                                    margin:0;
+                                    margin-top:16px;
+                                    padding:0;
+                                }
+                            }
+                        }
+                        // Date
+                        .date {
+                            margin-top:33px;
+                            // H4
+                            h4 {
+                                font-family:rajdhani;
+                                font-size:25px;
+                                margin:0;
+                            }
+                        }
+                        // Heading
+                        .heading {
+                            margin-top:50px;
+                            // H1
+                            h1 {
+                                font-family:rajdhani;
+                                font-size:40px;
+                                font-weight:bold;
+                                margin:0;
+                                padding:0;
+                            }
+                        }
+                        // Info
+                        .info {
+                            margin-top:16px;
+                            // H3
+                            h3 {
+                                font-family:rajdhani;
+                                font-size:30px;
+                                margin:0;
+                                padding:0;
+                            }
+                        }
+                        // Info Bottom
+                        .infoBottom {
+                            margin:0;
+                            margin-top:33px;
+                            // H3
+                            h3 {
+                                font-family:rajdhani;
+                                font-size:30px;
+                                margin:0;
+                            }
+                        }
+                        // Quotes
+                        .quotes {
+                            margin-top:33px;
+                            // Quotes Img
+                            .quotesImg {
+                                align-items:center;
+                                display:flex;
+                                width:10%;
+                                // Img
+                                img {
+                                    margin-left:25px;
+                                }
+                            }
+                            // Text
+                            .text {
+                                width:90%;
+                                // H3
+                                h3 {
+                                    font-family:rajdhani;
+                                    font-size:30px;
+                                    font-weight:bold;
+                                    margin:0;
+                                    margin-left:22px;
+                                    padding:0;
+                                    width:360px;
+                                }
+
+                            }
+                        }
+                    }
+                }
+                // Right
+                .right {
+                    display:flex;
+                    justify-content:end;
+                    // Right Area
+                    .rightArea {
+                        margin-right:200px;
+                        // Categories Area
+                        .categoriesArea {
+                            margin-top:125px;
+                            // Elements
+                            .elements {
+                                display:block;
+                                font-family:rajdhani;
+                                font-size:25px;
+                                font-weight:bold;
+                                margin:0;
+                                margin-top:14px;
+                                padding:0;
+                            }
+                            // Elements First
+                            .elementsFirst {
+                                display:block;
+                                font-family:rajdhani;
+                                font-size:25px;
+                                font-weight:bold;
+                                margin:0;
+                                margin-top:27px;
+                                padding:0;
+                            }
+                            // H4
+                            h4 {
+                                display:inline-block;
+                                font-family:rajdhani;
+                                font-size:25px;
+                                font-weight:bold;
+                                margin:0;
+                                padding:0;
+                            }
+                        }
+                        // Follow Area
+                        .followArea {
+                            margin-top:258px;
+                            // A
+                            a {
+                                margin-right:26px;
+                                margin-top:27px;
+                                padding:0;
+                                text-decoration:none;
+                                // Img
+                                img {
+                                    margin:0;
+                                    padding:0;
+                                }
+                            }
+                            // H4
+                            h4 {
+                                font-family:rajdhani;
+                                font-size:25px;
+                                font-weight:bold;
+                                margin:0;
+                                margin-bottom:27px;
+                                padding:0;
+                            }
+                        }
+                        // Posts Area
+                        .postsArea {
+                            margin-top:258px;
+                            // H4
+                            h4 {
+                                display:inline-block;
+                                font-family:rajdhani;
+                                font-size:22px;
+                                font-weight:bold;
+                                margin:0;
+                                padding:0;
+                            }
+                            // Posts Bottom
+                            .postsBottom {
+                                margin-top:14px;
+                                // Post Img
+                                .postImg {
+                                    width:26%;
+                                }
+                                // Post Info
+                                .postInfo {
+                                    align-items:center;
+                                    display:flex;
+                                    justify-content:end;
+                                    width:74%;
+                                    // H4
+                                    h4 {
+                                        display:inline-block;
+                                        margin:0;
+                                        padding:0;
+                                        width:305px;
+                                    }
+                                }
+                            }
+                            // Posts Heading
+                            .postsHeading {
+                                font-size:25px;
+                            }
+                            // Post Wrapper
+                            .postWrapper {
+                                margin-top:27px;
+                                // Post Img
+                                .postImg {
+                                    width:26%;
+                                }
+                                // Post Info
+                                .postInfo {
+                                    align-items:center;
+                                    display:flex;
+                                    justify-content:end;
+                                    width:74%;
+                                    // H4
+                                    h4 {
+                                        display:inline-block;
+                                        margin:0;
+                                        padding:0;
+                                        width:305px;
+                                    }
+                                }
+                            }
+                        }
+                        // Tags Area
+                        .tagsArea {
+                            margin-top:258px;
+                            // H4
+                            h4 {
+                                font-family:rajdhani;
+                                font-size:25px;
+                                font-weight:bold;
+                                margin:0;
+                                padding:0;
+                            }
+                            // Tags Elements
+                            .tagsElements {
+                                font-family:rajdhani;
+                                font-size:25px;
+                                font-weight:bold;
+                                margin-top:27px;
+                                width:418px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    // H1
+    h1 {
+        @include h1;
+    }
+    // H2
+    h2 {
+        @include h2;
+    }
+    // H3
+    h3 {
+        @include h3;
+    }
+    // H4
+    h4 {
+        @include h4;
+    }
+    // H5
+    h5 {
+        @include h5;
+    }
+    // H6
+    h6 {
+        @include h6;
+    }
+
+
+}
+
+
+// Work with Different Screen Sizes
+@media (min-height:201px) and (max-height:300px) {
+    body {
+        .content {
+            .search_area {
+                .search_container {
+                    form {
+                        .field {
+                            width:60%;
+                        }
+                    }
+                    .search_section {
+                        margin-top:50px;
+                    }
+                    .top_area {
+                        height:0;
+                        h1 {
+                            display:none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-height:301px) and (max-height:400px) {
+    body {
+        .content {
+            .search_area {
+                .search_container {
+                    .search_section {
+                        margin-top:50px;
+                    }
+                    .top_area {
+                        h1 {
+                            padding:30px 0 30px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-height:401px) and (max-height:500px) {
+    body {
+        .content {
+            .search_area {
+                .search_container {
+                    .search_section {
+                        margin-top:50px;
+                    }
+                    .top_area {
+                        h1 {
+                            padding:30px 0 30px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-height:501px) and (max-height:600px) {
+    body {
+        .content {
+            .search_area {
+                .search_container {
+                    .search_section {
+                        margin-top:50px;
+                    }
+                    .top_area {
+                        h1 {
+                            padding:30px 0 30px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-height:601px) and (max-height:700px) {
+    body {
+        .content {
+            .search_area {
+                .search_container {
+                    .search_section {
+                        margin-top:50px;
+                    }
+                    .top_area {
+                        h1 {
+                            padding:30px 0 30px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-height:701px) and (max-height:800px) {
+    body {
+        .content {
+            .search_area {
+                .search_container {
+                    .top_area {
+                        h1 {
+                            padding:60px 0 60px 60px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:341px) {
+    body {
+        .content {
+            h1 {
+                @include h1_small;
+            }
+            .search_area {
+                .search_container {
+                    .search_section {
+                        .options {
+                            width:250px;
+                            .block {
+                                width:250px;
+                            }
+                        }
+                    }
+                    .top_area {
+                        width:100%;
+                        .close_area {
+                            margin-right:0;
+                            position:absolute;
+                            right:10px;
+                            top:10px;
+                        }
+                        h1 {
+                            text-align:center;
+                            width:100%;
+                        }
+                    }
+                }
+            }
+        }
+        .contentAbout {
+            .aboutServices {
+                margin-bottom:54px;
+                margin-left:15px;
+                margin-right:15px;
+                margin-top:54px;
+                .aboutArea {
+                    .bikeImg {
+                        margin-top:10px;
+                    }
+                    .decode {
+                        .heading {
+                            display:flex;
+                            justify-content:center;
+                            margin-top:20px;
+                            width:175px;
+                            h1 {
+                                font-size:19px;
+                                text-align:center;
+                                width:100%;
+                            }
+                        }
+                        .info {
+                            margin-top:12px;
+                            width:175px;
+                            h2 {
+                                font-size:18px;
+                                text-align:center;
+                                width:100%;
+                            }
+                        }
+                        .smallHeading {
+                            display:flex;
+                            justify-content:center;
+                            h5 {
+                                font-size:12px;
+                                text-align:center;
+                            }
+                        }
+                    }
+                }
+                .infoTrack {
+                    margin-top:55px;
+                    .infoWrapper {
+                        height:initial;
+                        h2 {
+                            font-size:31px;
+                            margin-top:16px;
+                        }
+                        .infoWord {
+                            font-size:19px;
+                            margin-bottom:16px;
+                            margin-top:3.9px;
+                        }
+                        .line {
+                            display:none;
+                        }
+                        .mobileVersion {
+                            margin-bottom:0;
+                            padding-bottom:28px;
+                        }
+                    }
+                }
+                .services {
+                    h2 {
+                        font-size:23px;
+                        margin-top:92px;
+                    }
+                }
+                .servicesArea {
+                    margin-top:38px;
+                    .rentRepair {
+                        margin-top:29px !important;
+                    }
+                    .wrapper {
+                        .button {
+                            margin-top:19px;
+                            a {
+                                border-radius:6.6px;
+                                font-size:12px;
+                                padding-bottom:11px;
+                                padding-left:22px;
+                                padding-right:22px;
+                                padding-top:11px;
+                            }
+                        }
+                        .heading {
+                            h2 {
+                                font-size:20px;
+                                margin-top:13px;
+                            }
+                        }
+                        .icon {
+                            img {
+                                height:auto;
+                                width:39px;
+                            }
+                        }
+                        .infoServices {
+                            margin-top:7.3px;
+                            h4 {
+                                font-size:13px;
+                                width:206px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .contentBlog {
+            .blogArea {
+                .wrapper {
+                    .left {
+                        .wrapperLeft {
+                            margin-left:10px;
+                            margin-right:10px;
+                            margin-top:25px;
+                            .author {
+                                width:400px;
+                                .authorInfo {
+                                    .authorArea {
+                                        width:100%;
+                                        h3 {
+                                            font-size:27px;
+                                            margin:0;
+                                            text-align:center;
+                                        }
+                                        h4 {
+                                            font-size:23px;
+                                            margin:0;
+                                            margin-top:5px;
+                                            text-align:center;
+                                            width:190px;
+                                        }
+                                        .name {
+                                            font-size:27px;
+                                            margin:0;
+                                            margin-top:5px;
+                                            text-align:center;
+                                        }
+                                    }
+                                    .image {
+                                        display:none;
+                                    }
+                                }
+                            }
+                            .commentsArea {
+                                .comment {
+                                    .firstComment {
+                                        font-size:18px;
+                                    }
+                                    h4 {
+                                        font-size:18px;
+                                        text-align:center;
+                                    }
+                                }
+                                .commentForm {
+                                    form {
+                                        .commentingForm {
+                                            font-size:18px;
+                                        }
+                                        .commentSubmit {
+                                            font-size:18px;
+                                            padding-bottom:30px;
+                                            padding-left:67px;
+                                            padding-right:67px;
+                                            padding-top:30px;
+                                        }
+                                        .mailForm {
+                                            font-size:18px;
+                                        }
+                                        .nameForm {
+                                            font-size:18px;
+                                        }
+                                    }
+                                    h2 {
+                                        font-size:26px;
+                                        text-align:center;
+                                    }
+                                }
+                                .top {
+                                    h3 {
+                                        font-size:22px;
+                                        text-align:center;
+                                    }
+                                    h4 {
+                                        font-size:18px;
+                                        text-align:center;
+                                    }
+                                }
+                            }
+                            .date {
+                                h4 {
+                                    font-size:18px;
+                                    text-align:center;
+                                }
+                            }
+                            .heading {
+                                h1 {
+                                    font-size:26px;
+                                    text-align:center;
+                                }
+                            }
+                            .imageTop {
+                                display:flex;
+                                justify-content:center;
+                            }
+                            .info {
+                                h3 {
+                                    font-size:22px;
+                                    text-align:center;
+                                }
+                            }
+                            .infoBottom {
+                                display:flex;
+                                justify-content:center;
+                                h3 {
+                                    font-size:22px;
+                                    text-align:center;
+                                }
+                            }
+                            .quotes {
+                                .quotesImg {
+                                    display:flex;
+                                    justify-content:center;
+                                    width:100%;
+                                    img {
+                                        height:auto;
+                                        margin-left:0;
+                                        width:37px;
+                                    }
+                                }
+                                .text {
+                                    display:flex;
+                                    justify-content:center;
+                                    margin-top:10px;
+                                    width:100%;
+                                    h3 {
+                                        font-size:22px;
+                                        margin-left:0;
+                                        text-align:center;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .right {
+                        display:flex;
+                        justify-content:center;
+                        .rightArea {
+                            margin-left:10px;
+                            margin-right:10px;
+                            .categoriesArea {
+                                margin-top:0;
+                                .elements {
+                                    font-size:18px;
+                                }
+                                .elementsFirst {
+                                    font-size:18px;
+                                }
+                                h4 {
+                                    font-size:18px;
+                                    text-align:center;
+                                }
+                            }
+                            .followArea {
+                                margin-bottom:25px;
+                                margin-top:125px;
+                                a {
+                                    img {
+                                        height:auto;
+                                        width:40px;
+                                    }
+                                }
+                                h4 {
+                                    font-size:18px;
+                                    text-align:center;
+                                }
+                                .viber {
+                                    margin-right:0;
+                                }
+                            }
+                            .postsArea {
+                                margin-top:125px;
+                                .postsBottom {
+                                    .postInfo {
+                                        h4 {
+                                            font-size:16px;
+                                            margin-left:5px;
+                                            width:100%;
+                                        }
+                                    }
+                                }
+                                .postsHeading {
+                                    font-size:18px;
+                                    text-align:center;
+                                }
+                                .postWrapper {
+                                    .postInfo {
+                                        h4 {
+                                            font-size:16px;
+                                            margin-left:5px;
+                                            width:100%;
+                                        }
+                                    }
+                                }
+                            }
+                            .tagsArea {
+                                margin-top:125px;
+                                .tagsElements {
+                                    font-size:18px;
+                                    text-align:center;
+                                    width:230px;
+                                }
+                                .tagsHeading {
+                                    font-size:18px;
+                                    text-align:center;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:342px) and (max-width:455px) {
+    body {
+        .content {
+            h1 {
+                @include h1_455;
+            }
+            .search_area {
+                .search_container {
+                    .top_area {
+                        width:100%;
+                        .close_area {
+                            margin-right:0;
+                            position:absolute;
+                            right:10px;
+                            top:10px;
+                        }
+                        h1 {
+                            text-align:center;
+                            width:100%;
+                        }
+                    }
+                }
+            }
+        }
+        .contentAbout {
+            .aboutServices {
+                margin:60px;
+                .aboutArea {
+                    .bikeImg {
+                        margin-top:15px;
+                    }
+                    .decode {
+                        .heading {
+                            display:flex;
+                            justify-content:center;
+                            margin-top:20px;
+                            width:225px;
+                            h1 {
+                                font-size:23px;
+                                text-align:center;
+                                width:100%;
+                            }
+                        }
+                        .info {
+                            display:flex;
+                            justify-content:center;
+                            margin-top:12px;
+                            width:225px;
+                            h2 {
+                                font-size:20px;
+                                text-align:center;
+                                width:100%;
+                            }
+                        }
+                        .smallHeading {
+                            display:flex;
+                            justify-content:center;
+                            h5 {
+                                font-size:15px;
+                                text-align:center;
+                            }
+                        }
+                    }
+                }
+                .infoTrack {
+                    margin-top:61px;
+                    .infoWrapper {
+                        height:initial;
+                        h2 {
+                            font-size:35px;
+                            margin-top:18px;
+                        }
+                        .infoWord {
+                            font-size:21px;
+                            margin-bottom:18px;
+                            margin-top:4.3px;
+                        }
+                        .line {
+                            display:none;
+                        }
+                        .mobileVersion {
+                            margin-bottom:0;
+                            padding-bottom:28px;
+                        }
+                    }
+                }
+                .services {
+                    h2 {
+                        font-size:26px;
+                        margin-top:102px;
+                    }
+                }
+                .servicesArea {
+                    margin-top:42px;
+                    .rentRepair {
+                        margin-top:32px !important;
+                    }
+                    .wrapper {
+                        .button {
+                            margin-top:21px;
+                            a {
+                                border-radius:7.3px;
+                                font-size:12px;
+                                padding-bottom:12px;
+                                padding-left:25px;
+                                padding-right:25px;
+                                padding-top:12px;
+                            }
+                        }
+                        .heading {
+                            h2 {
+                                font-size:22px;
+                                margin-top:14px;
+                            }
+                        }
+                        .icon {
+                            img {
+                                height:auto;
+                                width:43px;
+                            }
+                        }
+                        .infoServices {
+                            margin-top:8.1px;
+                            h4 {
+                                font-size:14px;
+                                width:229px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .contentBlog {
+            .blogArea {
+                .wrapper {
+                    .left {
+                        .wrapperLeft {
+                            margin-left:25px;
+                            margin-right:25px;
+                            margin-top:50px;
+                            .author {
+                                width:400px;
+                                .authorInfo {
+                                    .authorArea {
+                                        width:100%;
+                                        h3 {
+                                            font-size:27px;
+                                            margin:0;
+                                            text-align:center;
+                                        }
+                                        h4 {
+                                            font-size:23px;
+                                            margin:0;
+                                            margin-top:5px;
+                                            text-align:center;
+                                            width:190px;
+                                        }
+                                        .name {
+                                            font-size:27px;
+                                            margin:0;
+                                            margin-top:5px;
+                                            text-align:center;
+                                        }
+                                    }
+                                    .image {
+                                        display:none;
+                                    }
+                                }
+                            }
+                            .commentsArea {
+                                .comment {
+                                    .firstComment {
+                                        font-size:18px;
+                                    }
+                                    h4 {
+                                        font-size:18px;
+                                        text-align:center;
+                                    }
+                                }
+                                .commentForm {
+                                    form {
+                                        .commentingForm {
+                                            font-size:18px;
+                                        }
+                                        .commentSubmit {
+                                            font-size:18px;
+                                            padding-bottom:30px;
+                                            padding-left:67px;
+                                            padding-right:67px;
+                                            padding-top:30px;
+                                        }
+                                        .mailForm {
+                                            font-size:18px;
+                                        }
+                                        .nameForm {
+                                            font-size:18px;
+                                        }
+                                    }
+                                    h2 {
+                                        font-size:26px;
+                                        text-align:center;
+                                    }
+                                }
+                                .top {
+                                    h3 {
+                                        font-size:22px;
+                                        text-align:center;
+                                    }
+                                    h4 {
+                                        font-size:18px;
+                                        text-align:center;
+                                    }
+                                }
+                            }
+                            .date {
+                                h4 {
+                                    font-size:18px;
+                                    text-align:center;
+                                }
+                            }
+                            .heading {
+                                h1 {
+                                    font-size:29px;
+                                    text-align:center;
+                                }
+                            }
+                            .imageTop {
+                                display:flex;
+                                justify-content:center;
+                            }
+                            .info {
+                                h3 {
+                                    font-size:22px;
+                                    text-align:center;
+                                }
+                            }
+                            .infoBottom {
+                                display:flex;
+                                justify-content:center;
+                                h3 {
+                                    font-size:22px;
+                                    text-align:center;
+                                }
+                            }
+                            .quotes {
+                                .quotesImg {
+                                    display:flex;
+                                    justify-content:center;
+                                    width:100%;
+                                    img {
+                                        height:auto;
+                                        margin-left:0;
+                                        width:37px;
+                                    }
+                                }
+                                .text {
+                                    display:flex;
+                                    justify-content:center;
+                                    margin-top:10px;
+                                    width:100%;
+                                    h3 {
+                                        font-size:22px;
+                                        margin-left:0;
+                                        text-align:center;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .right {
+                        display:flex;
+                        justify-content:center;
+                        .rightArea {
+                            margin-left:25px;
+                            margin-right:25px;
+                            .categoriesArea {
+                                margin-top:0;
+                                .elements {
+                                    font-size:18px;
+                                }
+                                .elementsFirst {
+                                    font-size:18px;
+                                }
+                                h4 {
+                                    font-size:18px;
+                                    text-align:center;
+                                }
+                            }
+                            .followArea {
+                                margin-bottom:50px;
+                                margin-top:125px;
+                                a {
+                                    img {
+                                        height:auto;
+                                        width:40px;
+                                    }
+                                }
+                                h4 {
+                                    font-size:18px;
+                                    text-align:center;
+                                }
+                                .viber {
+                                    margin-right:0;
+                                }
+                            }
+                            .postsArea {
+                                margin-top:125px;
+                                .postsBottom {
+                                    .postInfo {
+                                        h4 {
+                                            font-size:18px;
+                                            margin-left:5px;
+                                            width:100%;
+                                        }
+                                    }
+                                }
+                                .postsHeading {
+                                    font-size:18px;
+                                    text-align:center;
+                                }
+                                .postWrapper {
+                                    .postInfo {
+                                        h4 {
+                                            font-size:18px;
+                                            margin-left:5px;
+                                            width:100%;
+                                        }
+                                    }
+                                }
+                            }
+                            .tagsArea {
+                                margin-top:125px;
+                                .tagsElements {
+                                    font-size:18px;
+                                    text-align:center;
+                                    width:340px;
+                                }
+                                .tagsHeading {
+                                    font-size:18px;
+                                    text-align:center;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:456px) and (max-width:607px) {
+    body {
+        .content {
+            h1 {
+                @include h1_607;
+            }
+            .search_area {
+                .search_container {
+                    .top_area {
+                        width:100%;
+                        .close_area {
+                            margin-right:0;
+                            position:absolute;
+                            right:50px;
+                            top:50px;
+                        }
+                        h1 {
+                            text-align:center;
+                            width:100%;
+                        }
+                    }
+                }
+            }
+        }
+        .contentAbout {
+            .aboutServices {
+                margin:66px;
+                .aboutArea {
+                    .bikeImg {
+                        margin-top:25px;
+                        .image {
+                            display:flex;
+                            justify-content:center;
+                        }
+                    }
+                    .decode {
+                        width:100%;
+                        .heading {
+                            display:flex;
+                            justify-content:center;
+                            margin-top:20px;
+                            width:325px;
+                            h1 {
+                                font-size:36px;
+                                text-align:center;
+                                width:325px;
+                            }
+                        }
+                        .info {
+                            display:flex;
+                            justify-content:center;
+                            width:325px;
+                            h2 {
+                                font-size:22px;
+                                text-align:center;
+                                width:100%;
+                            }
+                        }
+                        .smallHeading {
+                            display:flex;
+                            justify-content:center;
+                            width:400px;
+                            h5 {
+                                text-align:center;
+                            }
+                        }
+                    }
+                }
+                .infoTrack {
+                    margin-top:68px;
+                    .infoWrapper {
+                        height:initial;
+                        h2 {
+                            font-size:39px;
+                            margin-top:20px;
+                        }
+                        .infoWord {
+                            font-size:23px;
+                            margin-bottom:20px;
+                            margin-top:4.8px;
+                        }
+                        .line {
+                            display:none;
+                        }
+                        .mobileVersion {
+                            margin-bottom:0;
+                            padding-bottom:28px;
+                        }
+                    }
+                }
+                .services {
+                    h2 {
+                        font-size:29px;
+                        margin-top:113px;
+                    }
+                }
+                .servicesArea {
+                    margin-top:47px;
+                    .rentRepair {
+                        margin-top:36px !important;
+                    }
+                    .wrapper {
+                        .button {
+                            margin-top:23px;
+                            a {
+                                border-radius:8.1px;
+                                font-size:12px;
+                                padding-bottom:13px;
+                                padding-left:28px;
+                                padding-right:28px;
+                                padding-top:13px;
+                            }
+                        }
+                        .heading {
+                            h2 {
+                                font-size:25px;
+                                margin-top:16px;
+                            }
+                        }
+                        .icon {
+                            img {
+                                height:auto;
+                                width:48px;
+                            }
+                        }
+                        .infoServices {
+                            margin-top:9px;
+                            h4 {
+                                font-size:16px;
+                                width:255px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .contentBlog {
+            .blogArea {
+                .wrapper {
+                    .left {
+                        .wrapperLeft {
+                            margin-left:25px;
+                            margin-right:25px;
+                            margin-top:50px;
+                            .author {
+                                width:400px;
+                                .authorInfo {
+                                    .authorArea {
+                                        h3 {
+                                            font-size:27px;
+                                        }
+                                        h4 {
+                                            font-size:23px;
+                                            width:190px;
+                                        }
+                                        .name {
+                                            font-size:27px;
+                                        }
+                                    }
+                                }
+                            }
+                            .commentsArea {
+                                .comment {
+                                    .firstComment {
+                                        font-size:23px;
+                                    }
+                                    h4 {
+                                        font-size:23px;
+                                        text-align:center;
+                                    }
+                                }
+                                .commentForm {
+                                    form {
+                                        .commentingForm {
+                                            font-size:23px;
+                                        }
+                                        .commentSubmit {
+                                            font-size:23px;
+                                            padding-bottom:38px;
+                                            padding-left:84px;
+                                            padding-right:84px;
+                                            padding-top:38px;
+                                        }
+                                        .mailForm {
+                                            font-size:23px;
+                                        }
+                                        .nameForm {
+                                            font-size:23px;
+                                        }
+                                    }
+                                    h2 {
+                                        font-size:32px;
+                                        text-align:center;
+                                    }
+                                }
+                                .top {
+                                    h3 {
+                                        font-size:27px;
+                                        text-align:center;
+                                    }
+                                    h4 {
+                                        font-size:23px;
+                                        text-align:center;
+                                    }
+                                }
+                            }
+                            .date {
+                                h4 {
+                                    font-size:23px;
+                                    text-align:center;
+                                }
+                            }
+                            .heading {
+                                h1 {
+                                    font-size:36px;
+                                    text-align:center;
+                                }
+                            }
+                            .imageTop {
+                                display:flex;
+                                justify-content:center;
+                            }
+                            .info {
+                                h3 {
+                                    font-size:27px;
+                                    text-align:center;
+                                }
+                            }
+                            .infoBottom {
+                                display:flex;
+                                justify-content:center;
+                                h3 {
+                                    font-size:27px;
+                                    text-align:center;
+                                }
+                            }
+                            .quotes {
+                                .quotesImg {
+                                    display:flex;
+                                    justify-content:center;
+                                    width:100%;
+                                    img {
+                                        height:auto;
+                                        margin-left:0;
+                                        width:46px;
+                                    }
+                                }
+                                .text {
+                                    display:flex;
+                                    justify-content:center;
+                                    margin-top:10px;
+                                    width:100%;
+                                    h3 {
+                                        font-size:27px;
+                                        margin-left:0;
+                                        text-align:center;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .right {
+                        display:flex;
+                        justify-content:center;
+                        .rightArea {
+                            margin-left:25px;
+                            margin-right:25px;
+                            .categoriesArea {
+                                margin-top:0;
+                                .elements {
+                                    font-size:23px;
+                                }
+                                .elementsFirst {
+                                    font-size:23px;
+                                }
+                                h4 {
+                                    font-size:23px;
+                                    text-align:center;
+                                }
+                            }
+                            .followArea {
+                                margin-bottom:50px;
+                                margin-top:125px;
+                                h4 {
+                                    font-size:23px;
+                                    text-align:center;
+                                }
+                                .viber {
+                                    margin-right:0;
+                                }
+                            }
+                            .postsArea {
+                                margin-top:125px;
+                                .postsBottom {
+                                    .postInfo {
+                                        h4 {
+                                            margin-left:5px;
+                                            width:100%;
+                                        }
+                                    }
+                                }
+                                .postsHeading {
+                                    font-size:23px;
+                                    text-align:center;
+                                }
+                                .postWrapper {
+                                    .postInfo {
+                                        h4 {
+                                            margin-left:5px;
+                                            width:100%;
+                                        }
+                                    }
+                                }
+                            }
+                            .tagsArea {
+                                margin-top:125px;
+                                .tagsElements {
+                                    font-size:23px;
+                                    text-align:center;
+                                }
+                                .tagsHeading {
+                                    font-size:23px;
+                                    text-align:center;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:608px) and (max-width:810px) {
+    body {
+        .content {
+            h1 {
+                @include h1_810;
+            }
+            .search_area {
+                .search_container {
+                    .top_area {
+                        width:100%;
+                        .close_area {
+                            margin-right:0;
+                            position:absolute;
+                            right:50px;
+                            top:50px;
+                        }
+                        h1 {
+                            text-align:center;
+                            width:100%;
+                        }
+                    }
+                }
+            }
+        }
+        .contentAbout {
+            .aboutServices {
+                margin:73px;
+                .aboutArea {
+                    .bikeImg {
+                        margin-top:25px;
+                        .image {
+                            display:flex;
+                            justify-content:center;
+                            img {
+                                height:auto;
+                                width:100%;
+                            }
+                        }
+                    }
+                    .decode {
+                        .heading {
+                            display:flex;
+                            justify-content:center;
+                            h1 {
+                                font-size:44px;
+                                text-align:center;
+                                width:460px;
+                            }
+                        }
+                        .info {
+                            display:flex;
+                            justify-content:center;
+                            h2 {
+                                font-size:25px;
+                                text-align:center;
+                                width:100%;
+                            }
+                        }
+                        .smallHeading {
+                            display:flex;
+                            justify-content:center;
+                            h5 {
+                                text-align:center;
+                            }
+                        }
+                    }
+                }
+                .infoTrack {
+                    margin-top:76px;
+                    .infoWrapper {
+                        height:initial;
+                        h2 {
+                            font-size:43px;
+                            margin-top:22px;
+                        }
+                        .infoWord {
+                            font-size:26px;
+                            margin-bottom:22px;
+                            margin-top:5.3px;
+                        }
+                        .line {
+                            display:none;
+                        }
+                        .mobileVersion {
+                            margin-bottom:0;
+                            padding-bottom:28px;
+                        }
+                    }
+                }
+                .services {
+                    h2 {
+                        font-size:32px;
+                        margin-top:126px;
+                    }
+                }
+                .servicesArea {
+                    margin-top:52px;
+                    .rentRepair {
+                        margin-top:40px !important;
+                    }
+                    .wrapper {
+                        .button {
+                            margin-top:26px;
+                            a {
+                                border-radius:9px;
+                                font-size:13px;
+                                padding-bottom:15px;
+                                padding-left:31px;
+                                padding-right:31px;
+                                padding-top:15px;
+                            }
+                        }
+                        .heading {
+                            h2 {
+                                font-size:28px;
+                                margin-top:18px;
+                            }
+                        }
+                        .icon {
+                            img {
+                                height:auto;
+                                width:53px;
+                            }
+                        }
+                        .infoServices {
+                            margin-top:10px;
+                            h4 {
+                                font-size:18px;
+                                width:283px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .contentBlog {
+            .blogArea {
+                .wrapper {
+                    .left {
+                        .wrapperLeft {
+                            margin-left:25px;
+                            margin-right:25px;
+                            margin-top:50px;
+                            .commentsArea {
+                                .comment {
+                                    h4 {
+                                        text-align:center;
+                                    }
+                                }
+                                .commentForm {
+                                    h2 {
+                                        text-align:center;
+                                    }
+                                }
+                                .top {
+                                    h3 {
+                                        text-align:center;
+                                    }
+                                    h4 {
+                                        text-align:center;
+                                    }
+                                }
+                            }
+                            .date {
+                                h4 {
+                                    text-align:center;
+                                }
+                            }
+                            .heading {
+                                h1 {
+                                    text-align:center;
+                                }
+                            }
+                            .imageTop {
+                                display:flex;
+                                justify-content:center;
+                            }
+                            .info {
+                                h3 {
+                                    text-align:center;
+                                }
+                            }
+                            .infoBottom {
+                                display:flex;
+                                justify-content:center;
+                                h3 {
+                                    text-align:center;
+                                }
+                            }
+                            .quotes {
+                                .quotesImg {
+                                    display:flex;
+                                    justify-content:center;
+                                    width:100%;
+                                    img {
+                                        margin-left:0;
+                                    }
+                                }
+                                .text {
+                                    display:flex;
+                                    justify-content:center;
+                                    margin-top:10px;
+                                    width:100%;
+                                    h3 {
+                                        margin-left:0;
+                                        text-align:center;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .right {
+                        display:flex;
+                        justify-content:center;
+                        .rightArea {
+                            margin-right:0;
+                            .categoriesArea {
+                                margin-top:0;
+                                h4 {
+                                    text-align:center;
+                                }
+                            }
+                            .followArea {
+                                margin-bottom:50px;
+                                margin-top:125px;
+                                h4 {
+                                    text-align:center;
+                                }
+                                .viber {
+                                    margin-right:0;
+                                }
+                            }
+                            .postsArea {
+                                margin-top:125px;
+                                .postsHeading {
+                                    text-align:center;
+                                }
+                            }
+                            .tagsArea {
+                                margin-top:125px;
+                                .tagsElements {
+                                    text-align:center;
+                                }
+                                .tagsHeading {
+                                    text-align:center;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:811px) and (max-width:1080px) {
+    body {
+        .content {
+            h1 {
+                @include h1_1080;
+            }
+            .search_area {
+                .search_container {
+                    .top_area {
+                        width:100%;
+                        .close_area {
+                            margin-right:0;
+                            position:absolute;
+                            right:50px;
+                            top:50px;
+                        }
+                        h1 {
+                            text-align:center;
+                            width:100%;
+                        }
+                    }
+                }
+            }
+        }
+        .contentAbout {
+            .aboutServices {
+                margin:81px;
+                .aboutArea {
+                    .bikeImg {
+                        margin-top:25px;
+                        .image {
+                            display:flex;
+                            justify-content:center;
+                            img {
+                                height:auto;
+                                width:75%;
+                            }
+                        }
+                    }
+                    .decode {
+                        .heading {
+                            display:flex;
+                            justify-content:center;
+                            h1 {
+                                font-size:49px;
+                                text-align:center;
+                            }
+                        }
+                        .info {
+                            h2 {
+                                font-size:28px;
+                                text-align:center;
+                            }
+                        }
+                        .smallHeading {
+                            display:flex;
+                            justify-content:center;
+                            h5 {
+                                text-align:center;
+                            }
+                        }
+                    }
+                }
+                .infoTrack {
+                    margin-top:84px;
+                    .infoWrapper {
+                        height:initial;
+                        h2 {
+                            font-size:48px;
+                            margin-top:25px;
+                        }
+                        .infoWord {
+                            font-size:29px;
+                            margin-bottom:25px;
+                            margin-top:5.9px;
+                        }
+                        .line {
+                            display:none;
+                        }
+                        .mobileVersion {
+                            margin-bottom:0;
+                            padding-bottom:28px;
+                        }
+                    }
+                }
+                .services {
+                    h2 {
+                        font-size:36px;
+                        margin-top:140px;
+                    }
+                }
+                .servicesArea {
+                    margin-top:58px;
+                    .rentRepair {
+                        margin-top:45px !important;
+                    }
+                    .wrapper {
+                        .button {
+                            margin-top:29px;
+                            a {
+                                border-radius:10px;
+                                font-size:14px;
+                                padding-bottom:17px;
+                                padding-left:35px;
+                                padding-right:35px;
+                                padding-top:17px;
+                            }
+                        }
+                        .heading {
+                            h2 {
+                                font-size:31px;
+                                margin-top:20px;
+                            }
+                        }
+                        .icon {
+                            img {
+                                height:auto;
+                                width:59px;
+                            }
+                        }
+                        .infoServices {
+                            margin-top:11px;
+                            h4 {
+                                font-size:20px;
+                                width:315px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .contentBlog {
+            .blogArea {
+                .wrapper {
+                    .left {
+                        .wrapperLeft {
+                            margin-left:25px;
+                            margin-right:25px;
+                            margin-top:50px;
+                            .commentsArea {
+                                .comment {
+                                    h4 {
+                                        text-align:center;
+                                    }
+                                }
+                                .commentForm {
+                                    h2 {
+                                        text-align:center;
+                                    }
+                                }
+                                .top {
+                                    h3 {
+                                        text-align:center;
+                                    }
+                                    h4 {
+                                        text-align:center;
+                                    }
+                                }
+                            }
+                            .date {
+                                h4 {
+                                    text-align:center;
+                                }
+                            }
+                            .heading {
+                                h1 {
+                                    text-align:center;
+                                }
+                            }
+                            .imageTop {
+                                display:flex;
+                                justify-content:center;
+                            }
+                            .info {
+                                h3 {
+                                    text-align:center;
+                                }
+                            }
+                            .infoBottom {
+                                display:flex;
+                                justify-content:center;
+                                h3 {
+                                    text-align:center;
+                                }
+                            }
+                            .quotes {
+                                .quotesImg {
+                                    display:flex;
+                                    justify-content:center;
+                                    width:100%;
+                                    img {
+                                        margin-left:0;
+                                    }
+                                }
+                                .text {
+                                    display:flex;
+                                    justify-content:center;
+                                    margin-top:10px;
+                                    width:100%;
+                                    h3 {
+                                        margin-left:0;
+                                        text-align:center;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .right {
+                        display:flex;
+                        justify-content:center;
+                        .rightArea {
+                            margin-right:0;
+                            .categoriesArea {
+                                margin-top:0;
+                                h4 {
+                                    text-align:center;
+                                }
+                            }
+                            .followArea {
+                                margin-bottom:50px;
+                                margin-top:125px;
+                                h4 {
+                                    text-align:center;
+                                }
+                                .viber {
+                                    margin-right:0;
+                                }
+                            }
+                            .postsArea {
+                                margin-top:125px;
+                                .postsHeading {
+                                    text-align:center;
+                                }
+                            }
+                            .tagsArea {
+                                margin-top:125px;
+                                .tagsElements {
+                                    text-align:center;
+                                }
+                                .tagsHeading {
+                                    text-align:center;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:1081px) and (max-width:1199px) {
+    body {
+        .content {
+            h1 {
+                @include h1_1199;
+            }
+            .search_area {
+                .search_container {
+                    .top_area {
+                        width:100%;
+                        .close_area {
+                            margin-right:0;
+                            position:absolute;
+                            right:50px;
+                            top:50px;
+                        }
+                        h1 {
+                            text-align:center;
+                            width:100%;
+                        }
+                    }
+                }
+            }
+        }
+        .contentAbout {
+            .aboutServices {
+                margin:90px;
+                .aboutArea {
+                    .bikeImg {
+                        margin-top:25px;
+                        .image {
+                            display:flex;
+                            justify-content:center;
+                            img {
+                                height:auto;
+                                width:75%;
+                            }
+                        }
+                    }
+                    .decode {
+                        .heading {
+                            display:flex;
+                            justify-content:center;
+                            h1 {
+                                font-size:54px;
+                                text-align:center;
+                            }
+                        }
+                        .info {
+                            h2 {
+                                font-size:31px;
+                                text-align:center;
+                            }
+                        }
+                        .smallHeading {
+                            display:flex;
+                            justify-content:center;
+                            h5 {
+                                text-align:center;
+                            }
+                        }
+                    }
+                }
+                .infoTrack {
+                    margin-top:93px;
+                    .infoWrapper {
+                        height:initial;
+                        h2 {
+                            font-size:53px;
+                            margin-top:28px;
+                        }
+                        .infoWord {
+                            font-size:32px;
+                            margin-bottom:28px;
+                            margin-top:6.6px;
+                        }
+                        .line {
+                            display:none;
+                        }
+                        .mobileVersion {
+                            margin-bottom:0;
+                            padding-bottom:28px;
+                        }
+                    }
+                }
+                .services {
+                    h2 {
+                        font-size:40px;
+                        margin-top:156px;
+                    }
+                }
+                .servicesArea {
+                    margin-top:65px;
+                    .rentRepair {
+                        margin-top:50px !important;
+                    }
+                    .wrapper {
+                        .button {
+                            margin-top:32px;
+                            a {
+                                border-radius:11px;
+                                font-size:16px;
+                                padding-bottom:19px;
+                                padding-left:38px;
+                                padding-right:38px;
+                                padding-top:19px;
+                            }
+                        }
+                        .heading {
+                            h2 {
+                                font-size:35px;
+                                margin-top:22px;
+                            }
+                        }
+                        .icon {
+                            img {
+                                height:auto;
+                                width:66px;
+                            }
+                        }
+                        .infoServices {
+                            margin-top:12px;
+                            h4 {
+                                font-size:22px;
+                                width:350px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .contentBlog {
+            .blogArea {
+                .wrapper {
+                    .left {
+                        .wrapperLeft {
+                            margin-left:25px;
+                            margin-right:25px;
+                            margin-top:50px;
+                            .commentsArea {
+                                .comment {
+                                    h4 {
+                                        text-align:center;
+                                    }
+                                }
+                                .commentForm {
+                                    h2 {
+                                        text-align:center;
+                                    }
+                                }
+                                .top {
+                                    h3 {
+                                        text-align:center;
+                                    }
+                                    h4 {
+                                        text-align:center;
+                                    }
+                                }
+                            }
+                            .date {
+                                h4 {
+                                    text-align:center;
+                                }
+                            }
+                            .heading {
+                                h1 {
+                                    text-align:center;
+                                }
+                            }
+                            .imageTop {
+                                display:flex;
+                                justify-content:center;
+                            }
+                            .info {
+                                h3 {
+                                    text-align:center;
+                                }
+                            }
+                            .infoBottom {
+                                display:flex;
+                                justify-content:center;
+                                h3 {
+                                    text-align:center;
+                                }
+                            }
+                            .quotes {
+                                .quotesImg {
+                                    display:flex;
+                                    justify-content:center;
+                                    width:100%;
+                                    img {
+                                        margin-left:0;
+                                    }
+                                }
+                                .text {
+                                    display:flex;
+                                    justify-content:center;
+                                    margin-top:10px;
+                                    width:100%;
+                                    h3 {
+                                        margin-left:0;
+                                        text-align:center;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .right {
+                        display:flex;
+                        justify-content:center;
+                        .rightArea {
+                            margin-right:0;
+                            .categoriesArea {
+                                margin-top:0;
+                                h4 {
+                                    text-align:center;
+                                }
+                            }
+                            .followArea {
+                                margin-bottom:50px;
+                                margin-top:125px;
+                                h4 {
+                                    text-align:center;
+                                }
+                                .viber {
+                                    margin-right:0;
+                                }
+                            }
+                            .postsArea {
+                                margin-top:125px;
+                                .postsHeading {
+                                    text-align:center;
+                                }
+                            }
+                            .tagsArea {
+                                margin-top:125px;
+                                .tagsElements {
+                                    text-align:center;
+                                }
+                                .tagsHeading {
+                                    text-align:center;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:1200px) and (max-width:1300px) {
+    body {
+        .contentAbout {
+            .aboutServices {
+                margin:100px;
+                .aboutArea {
+                    .decode {
+                        .heading {
+                            h1 {
+                                font-size:43.7px;
+                            }
+                        }
+                        .info {
+                            h2 {
+                                font-size:25.5px;
+                                width:500px;
+                            }
+                        }
+                        .smallHeading {
+                            h5 {
+                                font-size:14.6px;
+                            }
+                        }
+                    }
+                }
+                .infoTrack {
+                    margin-top:103px;
+                    .infoWrapper {
+                        height:182px;
+                        h2 {
+                            font-size:58px;
+                            margin-top:31px;
+                        }
+                        .infoWord {
+                            font-size:36px;
+                            margin-bottom:31px;
+                            margin-top:7.3px;
+                        }
+                        .line {
+                            bottom:136px;
+                            height:91px;
+                            width:0.73px;
+                        }
+                    }
+                }
+                .services {
+                    h2 {
+                        font-size:44px;
+                        margin-top:173px;
+                    }
+                }
+                .servicesArea {
+                    margin-top:72px;
+                    .wrapper {
+                        .button {
+                            margin-top:36px;
+                            a {
+                                border-radius:12px;
+                                font-size:18px;
+                                padding-bottom:21px;
+                                padding-left:42px;
+                                padding-right:42px;
+                                padding-top:21px;
+                            }
+                        }
+                        .heading {
+                            h2 {
+                                font-size:29px;
+                                margin-top:24px;
+                            }
+                        }
+                        .icon {
+                            img {
+                                height:auto;
+                                width:73px;
+                            }
+                        }
+                        .infoServices {
+                            margin-top:13px;
+                            h4 {
+                                font-size:18px;
+                                width:292px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .contentBlog {
+            .blogArea {
+                .wrapper {
+                    .left {
+                        .wrapperLeft {
+                            margin-left:25px;
+                        }
+                    }
+                    .right {
+                        .rightArea {
+                            margin-right:25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:1301px) and (max-width:1400px) {
+    body {
+        .contentAbout {
+            .aboutServices {
+                margin:111px;
+                .aboutArea {
+                    .decode {
+                        .heading {
+                            h1 {
+                                font-size:43.7px;
+                            }
+                        }
+                        .info {
+                            h2 {
+                                font-size:25.5px;
+                                width:500px;
+                            }
+                        }
+                        .smallHeading {
+                            h5 {
+                                font-size:14.6px;
+                            }
+                        }
+                    }
+                }
+                .infoTrack {
+                    margin-top:115px;
+                    .infoWrapper {
+                        height:202px;
+                        h2 {
+                            font-size:65px;
+                            margin-top:34px;
+                        }
+                        .infoWord {
+                            font-size:40px;
+                            margin-bottom:34px;
+                            margin-top:8.1px;
+                        }
+                        .line {
+                            bottom:151px;
+                            height:101px;
+                            width:0.81px;
+                        }
+                    }
+                }
+                .services {
+                    h2 {
+                        font-size:49px;
+                        margin-top:192px;
+                    }
+                }
+                .servicesArea {
+                    margin-top:80px;
+                    .wrapper {
+                        .button {
+                            margin-top:40px;
+                            a {
+                                border-radius:13px;
+                                font-size:20px;
+                                padding-bottom:23px;
+                                padding-left:47px;
+                                padding-right:47px;
+                                padding-top:23px;
+                            }
+                        }
+                        .heading {
+                            h2 {
+                                font-size:32px;
+                                margin-top:27px;
+                            }
+                        }
+                        .icon {
+                            img {
+                                height:auto;
+                                width:81px;
+                            }
+                        }
+                        .infoServices {
+                            margin-top:14px;
+                            h4 {
+                                font-size:20px;
+                                width:324px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .contentBlog {
+            .blogArea {
+                .wrapper {
+                    .left {
+                        .wrapperLeft {
+                            margin-left:50px;
+                        }
+                    }
+                    .right {
+                        .rightArea {
+                            margin-right:50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:1401px) and (max-width:1600px) {
+    body {
+        .contentAbout {
+            .aboutServices {
+                margin:123px;
+                .aboutArea {
+                    .decode {
+                        .heading {
+                            h1 {
+                                font-size:48.6px;
+                            }
+                        }
+                        .info {
+                            h2 {
+                                font-size:28.3px;
+                            }
+                        }
+                        .smallHeading {
+                            h5 {
+                                font-size:16.2px;
+                            }
+                        }
+                    }
+                }
+                .infoTrack {
+                    margin-top:128px;
+                    .infoWrapper {
+                        height:225px;
+                        h2 {
+                            font-size:72px;
+                            margin-top:38px;
+                        }
+                        .infoWord {
+                            font-size:45px;
+                            margin-bottom:38px;
+                            margin-top:9px;
+                        }
+                        .line {
+                            bottom:168px;
+                            height:112px;
+                            width:0.9px;
+                        }
+                    }
+                }
+                .services {
+                    h2 {
+                        font-size:54px;
+                        margin-top:213px;
+                    }
+                }
+                .servicesArea {
+                    margin-top:89px;
+                    .wrapper {
+                        .button {
+                            margin-top:44px;
+                            a {
+                                border-radius:15px;
+                                font-size:22px;
+                                padding-bottom:26px;
+                                padding-left:52px;
+                                padding-right:52px;
+                                padding-top:26px;
+                            }
+                        }
+                        .heading {
+                            h2 {
+                                font-size:36px;
+                                margin-top:30px;
+                            }
+                        }
+                        .icon {
+                            img {
+                                height:auto;
+                                width:90px;
+                            }
+                        }
+                        .infoServices {
+                            margin-top:16px;
+                            h4 {
+                                font-size:22px;
+                                width:360px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .contentBlog {
+            .blogArea {
+                .wrapper {
+                    .left {
+                        .wrapperLeft {
+                            margin-left:100px;
+                        }
+                    }
+                    .right {
+                        .rightArea {
+                            margin-right:100px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:1921px) and (max-width:2400px) {
+    body {
+        .content {
+            a {
+                @include a_2400;
+            }
+            h1 {
+                @include h1_2400;
+            }
+            h2 {
+                @include h2_2400;
+            }
+            h3 {
+                @include h3_2400;
+            }
+            h4 {
+                @include h4_2400;
+            }
+            h5 {
+                @include h5_2400;
+            }
+            h6 {
+                @include h6_2400;
+            }
+            .search_area {
+                .search_container {
+                    form {
+                        .field {
+                            font-size:25px;
+                            height:93px;
+                        }
+                        input[type = text] {
+                            padding-left:37px;
+                        }
+                    }
+                    .search_section {
+                        margin-top:125px;
+                        .options {
+                            width:375px;
+                            .block {
+                                border-radius:12.5px;
+                                height:62px;
+                                margin-top:31px;
+                                width:375px;
+                                a {
+                                    font-size:25px;
+                                }
+                            }
+                        }
+                    }
+                    .top_area {
+                        .close_area {
+                            margin-right:150px;
+                            .close {
+                                height:auto;
+                                width:50px;
+                            }
+                        }
+                        h1 {
+                            padding:150px 0 150px 150px;
+                        }
+                    }
+                }
+            }
+        }
+        .contentAbout {
+            .aboutServices {
+                margin:157px 166px 157px 166px;
+                .aboutArea {
+                    .decode {
+                        .heading {
+                            margin-top:56px;
+                            h1 {
+                                font-size:75px;
+                                width:665px;
+                            }
+                        }
+                        .info {
+                            margin-top:30px;
+                            h2 {
+                                font-size:43px;
+                                width:750px;
+                            }
+                        }
+                        .smallHeading {
+                            h5 {
+                                border-radius:8.7px;
+                                font-size:25px;
+                                padding-bottom:15px;
+                                padding-left:33px;
+                                padding-right:33px;
+                                padding-top:15px;
+                            }
+                        }
+                    }
+                }
+                .infoTrack {
+                    margin-top:178px;
+                    .infoWrapper {
+                        height:312px;
+                        h2 {
+                            font-size:100px;
+                            margin-top:52px;
+                        }
+                        .infoWord {
+                            font-size:62px;
+                            margin-bottom:52px;
+                            margin-top:12.5px;
+                        }
+                        .line {
+                            bottom:234px;
+                            height:156px;
+                            width:1.25px;
+                        }
+                    }
+                }
+                .services {
+                    h2 {
+                        font-size:75px;
+                        margin-top:296px;
+                    }
+                }
+                .servicesArea {
+                    margin-top:123px;
+                    .wrapper {
+                        .button {
+                            margin-top:61px;
+                            a {
+                                border-radius:21px;
+                                font-size:31px;
+                                padding-bottom:36px;
+                                padding-left:72px;
+                                padding-right:72px;
+                                padding-top:36px;
+                            }
+                        }
+                        .heading {
+                            h2 {
+                                font-size:50px;
+                                margin-top:41px;
+                            }
+                        }
+                        .icon {
+                            img {
+                                height:auto;
+                                width:125px;
+                            }
+                        }
+                        .infoServices {
+                            margin-top:22px;
+                            h4 {
+                                font-size:31px;
+                                width:500px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .contentBlog {
+            .blogArea {
+                .wrapper {
+                    .left {
+                        .wrapperLeft {
+                            margin-left:250px;
+                            margin-top:156px;
+                            .author {
+                                border:1.25px solid $white;
+                                height:316px;
+                                margin-top:126px;
+                                width:800px;
+                                .authorInfo {
+                                    .authorArea {
+                                        h3 {
+                                            font-size:37px;
+                                            margin-left:78px;
+                                        }
+                                        h4 {
+                                            font-size:31px;
+                                            margin-left:78px;
+                                            margin-top:5px;
+                                            width:375px;
+                                        }
+                                        .name {
+                                            font-size:37px;
+                                            margin-left:78px;
+                                            margin-top:3.7px;
+                                        }
+                                    }
+                                    .image {
+                                        img {
+                                            height:auto;
+                                            margin-left:31px;
+                                            width:250px;
+                                        }
+                                    }
+                                }
+                            }
+                            .commentsArea {
+                                margin-top:148px;
+                                .comment {
+                                    margin-top:97px;
+                                    .firstComment {
+                                        font-size:31px;
+                                        margin-top:20px;
+                                    }
+                                    h4 {
+                                        font-size:31px;
+                                    }
+                                }
+                                .commentForm {
+                                    margin-top:232px;
+                                    form {
+                                        margin-top:165px;
+                                        .commentingForm {
+                                            border-bottom:1.25px solid $white;
+                                            font-size:31px;
+                                            height:233px;
+                                            margin-top:96px;
+                                            width:800px;
+                                        }
+                                        .commentSubmit {
+                                            border-radius:18px;
+                                            font-size:31px;
+                                            margin-bottom:156px;
+                                            margin-top:127px;
+                                            padding-bottom:40px;
+                                            padding-left:87px;
+                                            padding-right:87px;
+                                            padding-top:40px;
+                                        }
+                                        input[type = email] {
+                                            padding-bottom:7.5px;
+                                        }
+                                        input[type = text] {
+                                            padding-bottom:7.5px;
+                                        }
+                                        .mailForm {
+                                            border-bottom:1.25px solid $white;
+                                            font-size:31px;
+                                            margin-top:96px;
+                                            width:800px;
+                                        }
+                                        .nameForm {
+                                            border-bottom:1.25px solid $white;
+                                            font-size:31px;
+                                            width:800px;
+                                        }
+                                    }
+                                    h2 {
+                                        font-size:43px;
+                                    }
+                                }
+                                .top {
+                                    h3 {
+                                        font-size:37px;
+                                    }
+                                    h4 {
+                                        font-size:31px;
+                                        margin-top:20px;
+                                    }
+                                }
+                            }
+                            .date {
+                                margin-top:41px;
+                                h4 {
+                                    font-size:31px;
+                                }
+                            }
+                            .heading {
+                                margin-top:62px;
+                                h1 {
+                                    font-size:50px;
+                                }
+                            }
+                            .imageTop {
+                                img {
+                                    height:auto;
+                                    width:800px;
+                                }
+                            }
+                            .info {
+                                margin-top:20px;
+                                h3 {
+                                    font-size:37px;
+                                }
+                            }
+                            .infoBottom {
+                                margin-top:41px;
+                                h3 {
+                                    font-size:37px;
+                                }
+                            }
+                            .quotes {
+                                margin-top:41px;
+                                .quotesImg {
+                                    img {
+                                        height:auto;
+                                        margin-left:31px;
+                                        width:63px;
+                                    }
+                                }
+                                .text {
+                                    h3 {
+                                        font-size:37px;
+                                        margin-left:27px;
+                                        width:450px;
+                                    }
+    
+                                }
+                            }
+                        }
+                    }
+                    .right {
+                        .rightArea {
+                            margin-right:250px;
+                            .categoriesArea {
+                                margin-top:156px;
+                                .elements {
+                                    font-size:31px;
+                                    margin-top:17px;
+                                }
+                                .elementsFirst {
+                                    font-size:31px;
+                                    margin-top:33px;
+                                }
+                                h4 {
+                                    font-size:31px;
+                                }
+                            }
+                            .followArea {
+                                margin-top:323px;
+                                a {
+                                    margin-right:32px;
+                                    margin-top:33px;
+                                    img {
+                                        height:auto;
+                                        width:62px;
+                                    }
+                                }
+                                h4 {
+                                    font-size:31px;
+                                    margin-bottom:33px;
+                                }
+                            }
+                            .postsArea {
+                                margin-top:323px;
+                                h4 {
+                                    font-size:27px;
+                                }
+                                .postsBottom {
+                                    margin-top:17px;
+                                    .postImg {
+                                        img {
+                                            height:auto;
+                                            width:156px;
+                                        }
+                                    }
+                                    .postInfo {
+                                        h4 {
+                                            width:377px;
+                                        }
+                                    }
+                                }
+                                .postsHeading {
+                                    font-size:31px;
+                                }
+                                .postWrapper {
+                                    margin-top:33px;
+                                    .postImg {
+                                        img {
+                                            height:auto;
+                                            width:156px;
+                                        }
+                                    }
+                                    .postInfo {
+                                        h4 {
+                                            width:377px;
+                                        }
+                                    }
+                                }
+                            }
+                            .tagsArea {
+                                margin-top:323px;
+                                h4 {
+                                    font-size:31px;
+                                }
+                                .tagsElements {
+                                    font-size:31px;
+                                    margin-top:33px;
+                                    width:523px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:2401px) and (max-width:3000px) {
+    body {
+        .content {
+            a {
+                @include a_3000;
+            }
+            h1 {
+                @include h1_3000;
+            }
+            h2 {
+                @include h2_3000;
+            }
+            h3 {
+                @include h3_3000;
+            }
+            h4 {
+                @include h4_3000;
+            }
+            h5 {
+                @include h5_3000;
+            }
+            h6 {
+                @include h6_3000;
+            }
+            .search_area {
+                .search_container {
+                    form {
+                        .field {
+                            font-size:31px;
+                            height:116px;
+                        }
+                        input[type = text] {
+                            padding-left:46px;
+                        }
+                    }
+                    .search_section {
+                        margin-top:156px;
+                        .options {
+                            width:469px;
+                            .block {
+                                border-radius:15.6px;
+                                height:77px;
+                                margin-top:38px;
+                                width:469px;
+                                a {
+                                    font-size:31px;
+                                }
+                            }
+                        }
+                    }
+                    .top_area {
+                        .close_area {
+                            margin-right:187px;
+                            .close {
+                                height:auto;
+                                width:62px;
+                            }
+                        }
+                        h1 {
+                            padding:187px 0 187px 187px;
+                        }
+                    }
+                }
+            }
+        }
+        .contentAbout {
+            .aboutServices {
+                margin:196px 208px 196px 208px;
+                .aboutArea {
+                    .decode {
+                        .heading {
+                            margin-top:70px;
+                            h1 {
+                                font-size:93px;
+                                width:831px;
+                            }
+                        }
+                        .info {
+                            margin-top:37px;
+                            h2 {
+                                font-size:53px;
+                                width:938px;
+                            }
+                        }
+                        .smallHeading {
+                            h5 {
+                                border-radius:10.8px;
+                                font-size:31px;
+                                padding-bottom:18px;
+                                padding-left:41px;
+                                padding-right:41px;
+                                padding-top:18px;
+                            }
+                        }
+                    }
+                }
+                .infoTrack {
+                    margin-top:223px;
+                    .infoWrapper {
+                        height:390px;
+                        h2 {
+                            font-size:125px;
+                            margin-top:65px;
+                        }
+                        .infoWord {
+                            font-size:77px;
+                            margin-bottom:65px;
+                            margin-top:15.6px;
+                        }
+                        .line {
+                            bottom:293px;
+                            height:195px;
+                            width:1.56px;
+                        }
+                    }
+                }
+                .services {
+                    h2 {
+                        font-size:93px;
+                        margin-top:370px;
+                    }
+                }
+                .servicesArea {
+                    margin-top:153px;
+                    .wrapper {
+                        .button {
+                            margin-top:76px;
+                            a {
+                                border-radius:26px;
+                                font-size:38px;
+                                padding-bottom:45px;
+                                padding-left:90px;
+                                padding-right:90px;
+                                padding-top:45px;
+                            }
+                        }
+                        .heading {
+                            h2 {
+                                font-size:62px;
+                                margin-top:51px;
+                            }
+                        }
+                        .icon {
+                            img {
+                                height:auto;
+                                width:156px;
+                            }
+                        }
+                        .infoServices {
+                            margin-top:27px;
+                            h4 {
+                                font-size:38px;
+                                width:625px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .contentBlog {
+            .blogArea {
+                .wrapper {
+                    .left {
+                        .wrapperLeft {
+                            margin-left:312px;
+                            margin-top:195px;
+                            .author {
+                                border:1.56px solid $white;
+                                height:395px;
+                                margin-top:126px;
+                                width:1000px;
+                                .authorInfo {
+                                    .authorArea {
+                                        h3 {
+                                            font-size:46px;
+                                            margin-left:97px;
+                                        }
+                                        h4 {
+                                            font-size:38px;
+                                            margin-left:97px;
+                                            margin-top:6.2px;
+                                            width:469px;
+                                        }
+                                        .name {
+                                            font-size:46px;
+                                            margin-left:97px;
+                                            margin-top:4.6px;
+                                        }
+                                    }
+                                    .image {
+                                        img {
+                                            height:auto;
+                                            margin-left:38px;
+                                            width:312px;
+                                        }
+                                    }
+                                }
+                            }
+                            .commentsArea {
+                                margin-top:185px;
+                                .comment {
+                                    margin-top:121px;
+                                    .firstComment {
+                                        font-size:38px;
+                                        margin-top:25px;
+                                    }
+                                    h4 {
+                                        font-size:38px;
+                                    }
+                                }
+                                .commentForm {
+                                    margin-top:290px;
+                                    form {
+                                        margin-top:206px;
+                                        .commentingForm {
+                                            border-bottom:1.56px solid $white;
+                                            font-size:38px;
+                                            height:291px;
+                                            margin-top:120px;
+                                            width:1000px;
+                                        }
+                                        .commentSubmit {
+                                            border-radius:22px;
+                                            font-size:38px;
+                                            margin-bottom:195px;
+                                            margin-top:158px;
+                                            padding-bottom:50px;
+                                            padding-left:108px;
+                                            padding-right:108px;
+                                            padding-top:50px;
+                                        }
+                                        input[type = email] {
+                                            padding-bottom:9.3px;
+                                        }
+                                        input[type = text] {
+                                            padding-bottom:9.3px;
+                                        }
+                                        .mailForm {
+                                            border-bottom:1.56px solid $white;
+                                            font-size:38px;
+                                            margin-top:120px;
+                                            width:1000px;
+                                        }
+                                        .nameForm {
+                                            border-bottom:1.56px solid $white;
+                                            font-size:38px;
+                                            width:1000px;
+                                        }
+                                    }
+                                    h2 {
+                                        font-size:53px;
+                                    }
+                                }
+                                .top {
+                                    h3 {
+                                        font-size:46px;
+                                    }
+                                    h4 {
+                                        font-size:38px;
+                                        margin-top:25px;
+                                    }
+                                }
+                            }
+                            .date {
+                                margin-top:51px;
+                                h4 {
+                                    font-size:38px;
+                                }
+                            }
+                            .heading {
+                                margin-top:77px;
+                                h1 {
+                                    font-size:62px;
+                                }
+                            }
+                            .imageTop {
+                                img {
+                                    height:auto;
+                                    width:1000px;
+                                }
+                            }
+                            .info {
+                                margin-top:25px;
+                                h3 {
+                                    font-size:46px;
+                                }
+                            }
+                            .infoBottom {
+                                margin-top:51px;
+                                h3 {
+                                    font-size:46px;
+                                }
+                            }
+                            .quotes {
+                                margin-top:51px;
+                                .quotesImg {
+                                    img {
+                                        height:auto;
+                                        margin-left:38px;
+                                        width:78px;
+                                    }
+                                }
+                                .text {
+                                    h3 {
+                                        font-size:46px;
+                                        margin-left:33px;
+                                        width:563px;
+                                    }
+    
+                                }
+                            }
+                        }
+                    }
+                    .right {
+                        .rightArea {
+                            margin-right:312px;
+                            .categoriesArea {
+                                margin-top:195px;
+                                .elements {
+                                    font-size:38px;
+                                    margin-top:21px;
+                                }
+                                .elementsFirst {
+                                    font-size:38px;
+                                    margin-top:41px;
+                                }
+                                h4 {
+                                    font-size:38px;
+                                }
+                            }
+                            .followArea {
+                                margin-top:404px;
+                                a {
+                                    margin-right:40px;
+                                    margin-top:41px;
+                                    img {
+                                        height:auto;
+                                        width:77px;
+                                    }
+                                }
+                                h4 {
+                                    font-size:38px;
+                                    margin-bottom:41px;
+                                }
+                            }
+                            .postsArea {
+                                margin-top:404px;
+                                h4 {
+                                    font-size:33px;
+                                }
+                                .postsBottom {
+                                    margin-top:21px;
+                                    .postImg {
+                                        img {
+                                            height:auto;
+                                            width:195px;
+                                        }
+                                    }
+                                    .postInfo {
+                                        h4 {
+                                            width:461px;
+                                        }
+                                    }
+                                }
+                                .postsHeading {
+                                    font-size:38px;
+                                }
+                                .postWrapper {
+                                    margin-top:41px;
+                                    .postImg {
+                                        img {
+                                            height:auto;
+                                            width:195px;
+                                        }
+                                    }
+                                    .postInfo {
+                                        h4 {
+                                            width:461px;
+                                        }
+                                    }
+                                }
+                            }
+                            .tagsArea {
+                                margin-top:404px;
+                                h4 {
+                                    font-size:38px;
+                                }
+                                .tagsElements {
+                                    font-size:38px;
+                                    margin-top:41px;
+                                    width:654px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:3001px) and (max-width:3750px) {
+    body {
+        .content {
+            a {
+                @include a_3750;
+            }
+            h1 {
+                @include h1_3750;
+            }
+            h2 {
+                @include h2_3750;
+            }
+            h3 {
+                @include h3_3750;
+            }
+            h4 {
+                @include h4_3750;
+            }
+            h5 {
+                @include h5_3750;
+            }
+            h6 {
+                @include h6_3750;
+            }
+            .search_area {
+                .search_container {
+                    form {
+                        .field {
+                            font-size:38px;
+                            height:145px;
+                        }
+                        input[type = text] {
+                            padding-left:57px;
+                        }
+                    }
+                    .search_section {
+                        margin-top:195px;
+                        .options {
+                            width:586px;
+                            .block {
+                                border-radius:19.5px;
+                                height:96px;
+                                margin-top:47px;
+                                width:586px;
+                                a {
+                                    font-size:38px;
+                                }
+                            }
+                        }
+                    }
+                    .top_area {
+                        .close_area {
+                            margin-right:234px;
+                            .close {
+                                height:auto;
+                                width:77px;
+                            }
+                        }
+                        h1 {
+                            padding:234px 0 234px 234px;
+                        }
+                    }
+                }
+            }
+        }
+        .contentAbout {
+            .aboutServices {
+                margin:245px 260px 245px 260px;
+                .aboutArea {
+                    .decode {
+                        .heading {
+                            margin-top:87px;
+                            h1 {
+                                font-size:116px;
+                                width:1039px;
+                            }
+                        }
+                        .info {
+                            margin-top:46px;
+                            h2 {
+                                font-size:66px;
+                                width:1173px;
+                            }
+                        }
+                        .smallHeading {
+                            h5 {
+                                border-radius:13.5px;
+                                font-size:38px;
+                                padding-bottom:22px;
+                                padding-left:51px;
+                                padding-right:51px;
+                                padding-top:22px;
+                            }
+                        }
+                    }
+                }
+                .infoTrack {
+                    margin-top:279px;
+                    .infoWrapper {
+                        height:488px;
+                        h2 {
+                            font-size:156px;
+                            margin-top:81px;
+                        }
+                        .infoWord {
+                            font-size:96px;
+                            margin-bottom:81px;
+                            margin-top:19.5px;
+                        }
+                        .line {
+                            bottom:366px;
+                            height:244px;
+                            width:1.95px;
+                        }
+                    }
+                }
+                .services {
+                    h2 {
+                        font-size:116px;
+                        margin-top:463px;
+                    }
+                }
+                .servicesArea {
+                    margin-top:191px;
+                    .wrapper {
+                        .button {
+                            margin-top:95px;
+                            a {
+                                border-radius:32px;
+                                font-size:47px;
+                                padding-bottom:56px;
+                                padding-left:112px;
+                                padding-right:112px;
+                                padding-top:56px;
+                            }
+                        }
+                        .heading {
+                            h2 {
+                                font-size:77px;
+                                margin-top:63px;
+                            }
+                        }
+                        .icon {
+                            img {
+                                height:auto;
+                                width:195px;
+                            }
+                        }
+                        .infoServices {
+                            margin-top:33px;
+                            h4 {
+                                font-size:47px;
+                                width:770px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .contentBlog {
+            .blogArea {
+                .wrapper {
+                    .left {
+                        .wrapperLeft {
+                            margin-left:390px;
+                            margin-top:243px;
+                            .author {
+                                border:1.95px solid $white;
+                                height:494px;
+                                margin-top:126px;
+                                width:1250px;
+                                .authorInfo {
+                                    .authorArea {
+                                        h3 {
+                                            font-size:57px;
+                                            margin-left:121px;
+                                        }
+                                        h4 {
+                                            font-size:47px;
+                                            margin-left:121px;
+                                            margin-top:7.7px;
+                                            width:586px;
+                                        }
+                                        .name {
+                                            font-size:57px;
+                                            margin-left:121px;
+                                            margin-top:5.7px;
+                                        }
+                                    }
+                                    .image {
+                                        img {
+                                            height:auto;
+                                            margin-left:47px;
+                                            width:390px;
+                                        }
+                                    }
+                                }
+                            }
+                            .commentsArea {
+                                margin-top:231px;
+                                .comment {
+                                    margin-top:151px;
+                                    .firstComment {
+                                        font-size:47px;
+                                        margin-top:31px;
+                                    }
+                                    h4 {
+                                        font-size:47px;
+                                    }
+                                }
+                                .commentForm {
+                                    margin-top:363px;
+                                    form {
+                                        margin-top:257px;
+                                        .commentingForm {
+                                            border-bottom:1.95px solid $white;
+                                            font-size:47px;
+                                            height:364px;
+                                            margin-top:150px;
+                                            width:1250px;
+                                        }
+                                        .commentSubmit {
+                                            border-radius:27px;
+                                            font-size:47px;
+                                            margin-bottom:243px;
+                                            margin-top:198px;
+                                            padding-bottom:62px;
+                                            padding-left:135px;
+                                            padding-right:135px;
+                                            padding-top:62px;
+                                        }
+                                        input[type = email] {
+                                            padding-bottom:11.6px;
+                                        }
+                                        input[type = text] {
+                                            padding-bottom:11.6px;
+                                        }
+                                        .mailForm {
+                                            border-bottom:1.95px solid $white;
+                                            font-size:47px;
+                                            margin-top:150px;
+                                            width:1250px;
+                                        }
+                                        .nameForm {
+                                            border-bottom:1.95px solid $white;
+                                            font-size:47px;
+                                            width:1250px;
+                                        }
+                                    }
+                                    h2 {
+                                        font-size:66px;
+                                    }
+                                }
+                                .top {
+                                    h3 {
+                                        font-size:57px;
+                                    }
+                                    h4 {
+                                        font-size:47px;
+                                        margin-top:31px;
+                                    }
+                                }
+                            }
+                            .date {
+                                margin-top:63px;
+                                h4 {
+                                    font-size:47px;
+                                }
+                            }
+                            .heading {
+                                margin-top:96px;
+                                h1 {
+                                    font-size:77px;
+                                }
+                            }
+                            .imageTop {
+                                img {
+                                    height:auto;
+                                    width:1250px;
+                                }
+                            }
+                            .info {
+                                margin-top:31px;
+                                h3 {
+                                    font-size:57px;
+                                }
+                            }
+                            .infoBottom {
+                                margin-top:63px;
+                                h3 {
+                                    font-size:57px;
+                                }
+                            }
+                            .quotes {
+                                margin-top:63px;
+                                .quotesImg {
+                                    img {
+                                        height:auto;
+                                        margin-left:47px;
+                                        width:97px;
+                                    }
+                                }
+                                .text {
+                                    h3 {
+                                        font-size:57px;
+                                        margin-left:41px;
+                                        width:704px;
+                                    }
+    
+                                }
+                            }
+                        }
+                    }
+                    .right {
+                        .rightArea {
+                            margin-right:390px;
+                            .categoriesArea {
+                                margin-top:243px;
+                                .elements {
+                                    font-size:47px;
+                                    margin-top:26px;
+                                }
+                                .elementsFirst {
+                                    font-size:47px;
+                                    margin-top:51px;
+                                }
+                                h4 {
+                                    font-size:47px;
+                                }
+                            }
+                            .followArea {
+                                margin-top:505px;
+                                a {
+                                    margin-right:50px;
+                                    margin-top:51px;
+                                    img {
+                                        height:auto;
+                                        width:96px;
+                                    }
+                                }
+                                h4 {
+                                    font-size:47px;
+                                    margin-bottom:51px;
+                                }
+                            }
+                            .postsArea {
+                                margin-top:505px;
+                                h4 {
+                                    font-size:41px;
+                                }
+                                .postsBottom {
+                                    margin-top:26px;
+                                    .postImg {
+                                        img {
+                                            height:auto;
+                                            width:243px;
+                                        }
+                                    }
+                                    .postInfo {
+                                        h4 {
+                                            width:576px;
+                                        }
+                                    }
+                                }
+                                .postsHeading {
+                                    font-size:47px;
+                                }
+                                .postWrapper {
+                                    margin-top:51px;
+                                    .postImg {
+                                        img {
+                                            height:auto;
+                                            width:243px;
+                                        }
+                                    }
+                                    .postInfo {
+                                        h4 {
+                                            width:576px;
+                                        }
+                                    }
+                                }
+                            }
+                            .tagsArea {
+                                margin-top:505px;
+                                h4 {
+                                    font-size:47px;
+                                }
+                                .tagsElements {
+                                    font-size:47px;
+                                    margin-top:51px;
+                                    width:818px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:3751px) {
+    body {
+        .content {
+            a {
+                @include a_4690;
+            }
+            h1 {
+                @include h1_4690;
+            }
+            h2 {
+                @include h2_4690;
+            }
+            h3 {
+                @include h3_4690;
+            }
+            h4 {
+                @include h4_4690;
+            }
+            h5 {
+                @include h5_4690;
+            }
+            h6 {
+                @include h6_4690;
+            }
+            .search_area {
+                .search_container {
+                    form {
+                        .field {
+                            font-size:47px;
+                            height:181px;
+                        }
+                        input[type = text] {
+                            padding-left:71px;
+                        }
+                    }
+                    .search_section {
+                        margin-top:243px;
+                        .options {
+                            width:733px;
+                            .block {
+                                border-radius:24.3px;
+                                height:120px;
+                                margin-top:58px;
+                                width:733px;
+                                a {
+                                    font-size:47px;
+                                }
+                            }
+                        }
+                    }
+                    .top_area {
+                        .close_area {
+                            margin-right:293px;
+                            .close {
+                                height:auto;
+                                width:96px;
+                            }
+                        }
+                        h1 {
+                            padding:293px 0 293px 293px;
+                        }
+                    }
+                }
+            }
+        }
+        .contentAbout {
+            .aboutServices {
+                margin:306px 325px 306px 325px;
+                .aboutArea {
+                    .decode {
+                        .heading {
+                            margin-top:108px;
+                            h1 {
+                                font-size:145px;
+                                width:1299px;
+                            }
+                        }
+                        .info {
+                            margin-top:57px;
+                            h2 {
+                                font-size:82px;
+                                width:1466px;
+                            }
+                        }
+                        .smallHeading {
+                            h5 {
+                                border-radius:16.8px;
+                                font-size:47px;
+                                padding-bottom:27px;
+                                padding-left:63px;
+                                padding-right:63px;
+                                padding-top:27px;
+                            }
+                        }
+                    }
+                }
+                .infoTrack {
+                    margin-top:349px;
+                    .infoWrapper {
+                        height:610px;
+                        h2 {
+                            font-size:195px;
+                            margin-top:101px;
+                        }
+                        .infoWord {
+                            font-size:120px;
+                            margin-bottom:101px;
+                            margin-top:24.3px;
+                        }
+                        .line {
+                            bottom:458px;
+                            height:305px;
+                            width:2.43px;
+                        }
+                    }
+                }
+                .services {
+                    h2 {
+                        font-size:145px;
+                        margin-top:579px;
+                    }
+                }
+                .servicesArea {
+                    margin-top:239px;
+                    .wrapper {
+                        .button {
+                            margin-top:118px;
+                            a {
+                                border-radius:40px;
+                                font-size:58px;
+                                padding-bottom:70px;
+                                padding-left:140px;
+                                padding-right:140px;
+                                padding-top:70px;
+                            }
+                        }
+                        .heading {
+                            h2 {
+                                font-size:96px;
+                                margin-top:78px;
+                            }
+                        }
+                        .icon {
+                            img {
+                                height:auto;
+                                width:243px;
+                            }
+                        }
+                        .infoServices {
+                            margin-top:41px;
+                            h4 {
+                                font-size:58px;
+                                width:950px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .contentBlog {
+            .blogArea {
+                .wrapper {
+                    .left {
+                        .wrapperLeft {
+                            margin-left:488px;
+                            margin-top:304px;
+                            .author {
+                                border:2.43px solid $white;
+                                height:618px;
+                                margin-top:158px;
+                                width:1560px;
+                                .authorInfo {
+                                    .authorArea {
+                                        h3 {
+                                            font-size:71px;
+                                            margin-left:151px;
+                                        }
+                                        h4 {
+                                            font-size:58px;
+                                            margin-left:151px;
+                                            margin-top:9.6px;
+                                            width:733px;
+                                        }
+                                        .name {
+                                            font-size:71px;
+                                            margin-left:151px;
+                                            margin-top:7.1px;
+                                        }
+                                    }
+                                    .image {
+                                        img {
+                                            height:auto;
+                                            margin-left:58px;
+                                            width:488px;
+                                        }
+                                    }
+                                }
+                            }
+                            .commentsArea {
+                                margin-top:289px;
+                                .comment {
+                                    margin-top:188px;
+                                    .firstComment {
+                                        font-size:58px;
+                                        margin-top:38px;
+                                    }
+                                    h4 {
+                                        font-size:58px;
+                                    }
+                                }
+                                .commentForm {
+                                    margin-top:454px;
+                                    form {
+                                        margin-top:321px;
+                                        .commentingForm {
+                                            border-bottom:2.43px solid $white;
+                                            font-size:58px;
+                                            height:455px;
+                                            margin-top:187px;
+                                            width:1560px;
+                                        }
+                                        .commentSubmit {
+                                            border-radius:33px;
+                                            font-size:58px;
+                                            margin-bottom:304px;
+                                            margin-top:247px;
+                                            padding-bottom:77px;
+                                            padding-left:168px;
+                                            padding-right:168px;
+                                            padding-top:77px;
+                                        }
+                                        input[type = email] {
+                                            padding-bottom:14.5px;
+                                        }
+                                        input[type = text] {
+                                            padding-bottom:14.5px;
+                                        }
+                                        .mailForm {
+                                            border-bottom:2.43px solid $white;
+                                            font-size:58px;
+                                            margin-top:187px;
+                                            width:1560px;
+                                        }
+                                        .nameForm {
+                                            border-bottom:2.43px solid $white;
+                                            font-size:58px;
+                                            width:1560px;
+                                        }
+                                    }
+                                    h2 {
+                                        font-size:82px;
+                                    }
+                                }
+                                .top {
+                                    h3 {
+                                        font-size:71px;
+                                    }
+                                    h4 {
+                                        font-size:58px;
+                                        margin-top:38px;
+                                    }
+                                }
+                            }
+                            .date {
+                                margin-top:78px;
+                                h4 {
+                                    font-size:58px;
+                                }
+                            }
+                            .heading {
+                                margin-top:120px;
+                                h1 {
+                                    font-size:96px;
+                                }
+                            }
+                            .imageTop {
+                                img {
+                                    height:auto;
+                                    width:1560px;
+                                }
+                            }
+                            .info {
+                                margin-top:38px;
+                                h3 {
+                                    font-size:71px;
+                                }
+                            }
+                            .infoBottom {
+                                margin-top:78px;
+                                h3 {
+                                    font-size:71px;
+                                }
+                            }
+                            .quotes {
+                                margin-top:78px;
+                                .quotesImg {
+                                    img {
+                                        height:auto;
+                                        margin-left:58px;
+                                        width:121px;
+                                    }
+                                }
+                                .text {
+                                    h3 {
+                                        font-size:71px;
+                                        margin-left:51px;
+                                        width:880px;
+                                    }
+    
+                                }
+                            }
+                        }
+                    }
+                    .right {
+                        .rightArea {
+                            margin-right:488px;
+                            .categoriesArea {
+                                margin-top:304px;
+                                .elements {
+                                    font-size:58px;
+                                    margin-top:32px;
+                                }
+                                .elementsFirst {
+                                    font-size:58px;
+                                    margin-top:63px;
+                                }
+                                h4 {
+                                    font-size:58px;
+                                }
+                            }
+                            .followArea {
+                                margin-top:631px;
+                                a {
+                                    margin-right:62px;
+                                    margin-top:63px;
+                                    img {
+                                        height:auto;
+                                        width:120px;
+                                    }
+                                }
+                                h4 {
+                                    font-size:58px;
+                                    margin-bottom:63px;
+                                }
+                            }
+                            .postsArea {
+                                margin-top:631px;
+                                h4 {
+                                    font-size:51px;
+                                }
+                                .postsBottom {
+                                    margin-top:32px;
+                                    .postImg {
+                                        img {
+                                            height:auto;
+                                            width:304px;
+                                        }
+                                    }
+                                    .postInfo {
+                                        h4 {
+                                            width:720px;
+                                        }
+                                    }
+                                }
+                                .postsHeading {
+                                    font-size:58px;
+                                }
+                                .postWrapper {
+                                    margin-top:63px;
+                                    .postImg {
+                                        img {
+                                            height:auto;
+                                            width:304px;
+                                        }
+                                    }
+                                    .postInfo {
+                                        h4 {
+                                            width:720px;
+                                        }
+                                    }
+                                }
+                            }
+                            .tagsArea {
+                                margin-top:631px;
+                                h4 {
+                                    font-size:58px;
+                                }
+                                .tagsElements {
+                                    font-size:58px;
+                                    margin-top:63px;
+                                    width:1023px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

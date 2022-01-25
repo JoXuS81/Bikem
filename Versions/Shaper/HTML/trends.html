@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+
+<!-- Website/Template Language -->
+<html lang = "en">
+
+
+    <head>
+        <!-- Language Coding - UTF-8 -->
+        <meta charset = "utf-8">
+
+        <!-- Description, important for SEO -->
+        <meta name = "description" content = "Our shop work with the top class bikes.">
+
+        <!-- Keywords -->
+        <meta name = "keywords" content = "Bike, Blog, Bootstrap, Creative, Modern, Responsive, Road, Shop">
+
+        <!-- Suiting for different device sizes -->
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0">
+
+        <!-- For quality view on Internet Explorer -->
+        <meta http-equiv = "X-UA-Compatible" content = "ie=edge">
+        <link rel = "icon" type = "image/png" href = "../Images/Title_Bar/Bikem.png">
+        <link rel = "stylesheet" type = "text/css" href = "../SCSS/Bootstrap/bootstrap.css">
+        <link rel = "stylesheet" type = "text/css" href = "../SCSS/Bootstrap/bootstrap.min.css">
+        <link rel = "stylesheet" type = "text/css" href = "../SCSS/Bootstrap/bootstrap-grid.css">
+        <link rel = "stylesheet" type = "text/css" href = "../SCSS/Bootstrap/bootstrap-grid.min.css">
+        <link rel = "stylesheet" type = "text/css" href = "../SCSS/Bootstrap/bootstrap-reboot.css">
+        <link rel = "stylesheet" type = "text/css" href = "../SCSS/Bootstrap/bootstrap-reboot.min.css">
+        <link href = "https://unpkg.com/aos@2.3.1/dist/aos.css" rel = "stylesheet">
+        <link rel = "stylesheet" href = "../SCSS/SCSS_Files/Style/style.css">
+        <title>
+            Bikem - Top Class Bikes
+        </title>
+
+
+        <!-- 
+
+        *****************
+        TABLE OF CONTENTS
+        *****************
+
+        1. Body
+         1.1 Content Blog
+          1.1.1 Blog Area
+           1.1.1.1 Wrapper
+            1.1.1.1.1 Left
+             1.1.1.1.1.1 Wrapper Left
+              1.1.1.1.1.1.1 Image Top
+               1.1.1.1.1.1.1.1 Img
+              1.1.1.1.1.1.2 Date
+               1.1.1.1.1.1.2.1 H4
+              1.1.1.1.1.1.3 Heading
+               1.1.1.1.1.1.3.1 H1
+              1.1.1.1.1.1.4 Info
+               1.1.1.1.1.1.4.1 H3
+              1.1.1.1.1.1.5 Quotes
+               1.1.1.1.1.1.5.1 Quotes Img
+                1.1.1.1.1.1.5.1.1 Img
+               1.1.1.1.1.1.5.2 Text
+                1.1.1.1.1.1.5.2.1 H3
+              1.1.1.1.1.1.6 Info Bottom
+               1.1.1.1.1.1.6.1 H3
+              1.1.1.1.1.1.7 Author
+               1.1.1.1.1.1.7.1 Author Info
+                1.1.1.1.1.1.7.1.1 Image
+                 1.1.1.1.1.1.7.1.1.1 Img
+                1.1.1.1.1.1.7.1.2 Author Area
+                 1.1.1.1.1.1.7.1.2.1 H3
+                 1.1.1.1.1.1.7.1.2.2 Name
+                 1.1.1.1.1.1.7.1.2.3 H4
+              1.1.1.1.1.1.8 Comments Area
+               1.1.1.1.1.1.8.1 Top
+                1.1.1.1.1.1.8.1.1 H3
+                1.1.1.1.1.1.8.1.2 H4
+               1.1.1.1.1.1.8.2 Comment
+                1.1.1.1.1.1.8.2.1 H4
+                1.1.1.1.1.1.8.2.2 First Comment
+               1.1.1.1.1.1.8.3 Comment Form
+                1.1.1.1.1.1.8.3.1 H2
+                1.1.1.1.1.1.8.3.2 Form
+                 1.1.1.1.1.1.8.3.2.1 Name Form
+                 1.1.1.1.1.1.8.3.2.2 Mail Form
+                 1.1.1.1.1.1.8.3.2.3 Commenting Form
+                 1.1.1.1.1.1.8.3.2.4 Comment Submit
+            1.1.1.1.2 Right
+             1.1.1.1.2.1 Right Area
+              1.1.1.1.2.1.1 Categories Area
+               1.1.1.1.2.1.1.1 H4
+               1.1.1.1.2.1.1.2 Elements First
+               1.1.1.1.2.1.1.3 Elements
+               1.1.1.1.2.1.1.4 Elements
+               1.1.1.1.2.1.1.5 Elements
+              1.1.1.1.2.1.2 Posts Area
+               1.1.1.1.2.1.2.1 H4
+               1.1.1.1.2.1.2.2 Post Wrapper
+                1.1.1.1.2.1.2.2.1 Post Img
+                 1.1.1.1.2.1.2.2.1.1 Img
+                1.1.1.1.2.1.2.2.2 Post Info
+                 1.1.1.1.2.1.2.2.2.1 H4
+               1.1.1.1.2.1.2.3 Posts Bottom
+                1.1.1.1.2.1.2.3.1 Post Img
+                 1.1.1.1.2.1.2.3.1.1 Img
+                1.1.1.1.2.1.2.3.2 Post Info
+                 1.1.1.1.2.1.2.3.2.1 H4
+               1.1.1.1.2.1.2.4 Posts Bottom
+                1.1.1.1.2.1.2.4.1 Post Img
+                 1.1.1.1.2.1.2.4.1.1 Img
+                1.1.1.1.2.1.2.4.2 Post Info
+                 1.1.1.1.2.1.2.4.2.1 H4
+              1.1.1.1.2.1.3 Tags Area
+               1.1.1.1.2.1.3.1 H4
+               1.1.1.1.2.1.3.2 Tags Elements
+              1.1.1.1.2.1.4 Follow Area
+               1.1.1.1.2.1.4.1 H4
+               1.1.1.1.2.1.4.2 A
+                1.1.1.1.2.1.4.2.1 Img
+               1.1.1.1.2.1.4.3 A
+                1.1.1.1.2.1.4.3.1 Img
+               1.1.1.1.2.1.4.4 A
+                1.1.1.1.2.1.4.4.1 Img
+               1.1.1.1.2.1.4.5 A
+                1.1.1.1.2.1.4.5.1 Img
+
+        -->
+
+    </head>
+
+
+    <!-- BODY -->
+    <body>
+
+
+        <!-- CONTENT -->
+        <div class = "contentBlog">
+
+
+            <!-- BLOG AREA -->
+            <div class = "blogArea"> 
+                <!-- Wrapper -->
+                <div class = "m-0 p-0 row wrapper">
+                    <!-- Left -->
+                    <div class = "col-xl-12 col-xxl-6 left m-0 p-0">
+                        <!-- Wrapper Left -->
+                        <div class = "wrapperLeft">
+                            <!-- Image Top -->
+                            <div class = "imageTop">
+                                <!-- Img -->
+                                <img class = "img-fluid" src = "../Images/Blogs/bicycleLarge.png" alt = "Bicycle">
+                            </div>
+                            <!-- Date -->
+                            <div class = "date">
+                                <!-- H4 -->
+                                <h4>
+                                    OCTOBER 2021 - TRENDS
+                                </h4>
+                            </div>
+                            <!-- Heading -->
+                            <div class = "heading">
+                                <!-- H1 -->
+                                <h1>
+                                    UNDERSTAND THE TRENDS IN MODERN BICYCLE INDUSTRY
+                                </h1>
+                            </div>
+                            <!-- Info -->
+                            <div class = "info">
+                                <!-- H3 -->
+                                <h3>
+                                    The cycling industry may be rife with high-ticket sales, but it’s still susceptible to trends. Certain product categories are growing faster than others. Hybrid bicycles are growing at 3.1% per year, with no signs to stop.
+                                </h3>
+                            </div>
+                            <!-- Quotes -->
+                            <div class = "mb-0 ml-0 mr-0 p-0 quotes row">
+                                <!-- Quotes Img -->
+                                <div class = "col-12 col-xl-6 mb-0 mr-0 mt-0 p-0 quotesImg">
+                                    <div>
+                                        <!-- Img -->
+                                        <img class = "img-fluid" src = "../Images/Blogs/Quotes.png" alt = "Quotes">
+                                    </div>
+                                </div>
+                                <!-- Text -->
+                                <div class = "col-12 col-xl-6 mb-0 ml-0 mr-0 m-xxl-0 p-0 text">
+                                    <!-- H3 -->
+                                    <h3>
+                                        WE WANT TO BE A PART OF THIS GROWING TREND!
+                                    </h3>
+                                </div>
+                            </div>
+                            <!-- Info Bottom -->
+                            <div class = "infoBottom">
+                                <!-- H3 -->
+                                <h3>
+                                    You are free also to be a part of this trend - visit us, and we will recommend you only the best bikes.
+                                </h3>
+                            </div>
+                            <div class = "d-flex justify-content-center justify-content-xxl-start">
+                                <!-- Author -->
+                                <div class = "author">
+                                    <!-- Author Info -->
+                                    <div class = "authorInfo m-0 p-0 row">
+                                        <!-- Image -->
+                                        <div class = "col-xl-6 image m-0 p-0">
+                                            <!-- Img -->
+                                            <img class = "img-fluid" src = "../Images/Blogs/authorTrends.png" alt = "Author">
+                                        </div>
+                                        <!-- Author Area -->
+                                        <div class = "authorArea col-xl-6 m-0 p-0">
+                                            <div class = "d-flex justify-content-center justify-content-xxl-start">
+                                                <!-- H3 -->
+                                                <h3>
+                                                    AUTHOR
+                                                </h3>
+                                            </div>
+                                            <div class = "d-flex justify-content-center justify-content-xxl-start">
+                                                <!-- Name -->
+                                                <h3 class = "name">
+                                                    Larissa Sunti
+                                                </h3>
+                                            </div>
+                                            <div class = "d-flex justify-content-center justify-content-xxl-start">
+                                                <!-- H4 -->
+                                                <h4>
+                                                    Larissa is passionate about cycling and outdoor activities.
+                                                </h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Comments Area -->
+                            <div class = "commentsArea">
+                                <!-- Top -->
+                                <div class = "top">
+                                    <div class = "d-flex justify-content-center justify-content-xxl-start">
+                                        <!-- H3 -->
+                                        <h3>
+                                            COMMENTS
+                                        </h3>
+                                    </div>
+                                    <!-- H4 -->
+                                    <h4>
+                                        1 Comment
+                                    </h4>
+                                </div>
+                                <!-- Comment -->
+                                <div class = "comment">
+                                    <!-- H4 -->
+                                    <h4>
+                                        David Haas
+                                    </h4>
+                                    <!-- First Comment -->
+                                    <h4 class = "firstComment">
+                                        I am already part of the trend.
+                                    </h4>
+                                </div>
+                                <!-- Comment Form -->
+                                <div class = "commentForm">
+                                    <div class = "d-flex justify-content-center justify-content-xxl-start">
+                                        <!-- H2 -->
+                                        <h2>
+                                            LEAVE A COMMENT
+                                        </h2>
+                                    </div>
+                                    <!-- Form -->
+                                    <form>
+                                        <div class = "d-flex justify-content-center justify-content-xxl-start">
+                                            <!-- Name Form -->
+                                            <input class = "nameForm" id = "name" placeholder = "NAME" type = "text">
+                                        </div>
+                                        <div class = "d-flex justify-content-center justify-content-xxl-start">
+                                            <!-- Mail Form -->
+                                            <input class = "mailForm" id = "mail" placeholder = "MAIL" type = "email">
+                                        </div>
+                                        <div class = "d-flex justify-content-center justify-content-xxl-start">
+                                            <!-- Commenting Form -->
+                                            <textarea class = "commentingForm" id = "comment" placeholder = "COMMENT"></textarea>
+                                        </div>
+                                        <div class = "d-flex justify-content-center justify-content-xxl-start">
+                                            <!-- Comment Submit -->
+                                            <input class = "commentSubmit" id = "buttonComment" type = "submit" value = "SEND">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Right -->
+                    <div class = "col-xl-12 col-xxl-6 m-0 p-0 right">
+                        <!-- Right Area -->
+                        <div class = "rightArea">
+                            <!-- Categories Area -->
+                            <div class = "categoriesArea">
+                                <div class = "d-flex justify-content-center justify-content-xxl-start">
+                                    <!-- H4 -->
+                                    <h4>
+                                        CATEGORIES
+                                    </h4>
+                                </div>
+                                <!-- Elements First -->
+                                <h4 class = "elementsFirst">
+                                    Food
+                                </h4>
+                                <!-- Elements -->
+                                <h4 class = "elements">
+                                    Lifestyle
+                                </h4>
+                                <!-- Elements -->
+                                <h4 class = "elements">
+                                    Rent
+                                </h4>
+                                <!-- Elements -->
+                                <h4 class = "elements">
+                                    Trends
+                                </h4>
+                            </div>
+                            <!-- Posts Area -->
+                            <div class = "postsArea">
+                                <div class = "d-flex justify-content-center justify-content-xxl-start">
+                                    <!-- Posts Heading -->
+                                    <h4 class = "postsHeading">
+                                        OTHER POSTS
+                                    </h4>
+                                </div>
+                                <!-- Post Wrapper -->
+                                <div class = "mb-0 ml-0 mr-0 p-0 postWrapper row">
+                                    <!-- Post Img -->
+                                    <div class = "col-xl-6 m-0 p-0 postImg">
+                                        <!-- Img -->
+                                        <img class = "img-fluid" src = "../Images/Blogs/rentalSmall.png" alt = "Rent">
+                                    </div>
+                                    <!-- Post Info -->
+                                    <div class = "col-xl-6 m-0 p-0 postInfo">
+                                        <!-- H4 -->
+                                        <h4>
+                                            Are Bike Rentals the Cheapest Way to Rent Transportation?
+                                        </h4>
+                                    </div>
+                                </div>
+                                <!-- Posts Bottom -->
+                                <div class = "mb-0 ml-0 mr-0 p-0 postsBottom row">
+                                    <!-- Post Img -->
+                                    <div class = "col-xl-6 m-0 p-0 postImg">
+                                        <!-- Img -->
+                                        <img class = "img-fluid" src = "../Images/Blogs/lifestyleSmall.png" alt = "Lifestyle">
+                                    </div>
+                                    <!-- Post Info -->
+                                    <div class = "col-xl-6 m-0 p-0 postInfo">
+                                        <!-- H4 -->
+                                        <h4>
+                                            What Kind of the Bicycle You Need for Your Lifestyle?
+                                        </h4>
+                                    </div>
+                                </div>
+                                <!-- Posts Bottom -->
+                                <div class = "mb-0 ml-0 mr-0 p-0 postsBottom row">
+                                    <!-- Post Img -->
+                                    <div class = "col-xl-6 m-0 p-0 postImg">
+                                        <!-- Img -->
+                                        <img class = "img-fluid" src = "../Images/Blogs/foodSmall.png" alt = "Food">
+                                    </div>
+                                    <!-- Post Info -->
+                                    <div class = "col-xl-6 m-0 p-0 postInfo">
+                                        <!-- H4 -->
+                                        <h4>
+                                            You Need a Quality and Healthy Food for Your Cycling Day
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tags Area -->
+                            <div class = "tagsArea">
+                                <!-- Tags Heading -->
+                                <h4 class = "tagsHeading">
+                                    TAGS
+                                </h4>
+                                <div class = "d-flex justify-content-center justify-content-xxl-start">
+                                    <!-- Tags Elements -->
+                                    <h4 class = "tagsElements">
+                                        Bike - Cycling - Driving - Industry - Lifestyle - Rent - Transport - Trends
+                                    </h4>
+                                </div>
+                            </div>
+                            <!-- Follow Area -->
+                            <div class = "followArea">
+                                <!-- H4 -->
+                                <h4>
+                                    FOLLOW US
+                                </h4>
+                                <div class = "d-flex justify-content-center justify-content-xxl-start">
+                                    <div>
+                                        <!-- A -->
+                                        <a href = "https://www.facebook.com/">
+                                            <!-- Img -->
+                                            <img class = "img-fluid" src = "../Images/Blogs/Fb.png" alt = "Fb">
+                                        </a>
+                                        <!-- A -->
+                                        <a href = "https://twitter.com/">
+                                            <!-- Img -->
+                                            <img class = "img-fluid" src = "../Images/Blogs/Tw.png" alt = "Tw">
+                                        </a>
+                                        <!-- A -->
+                                        <a href = "https://www.instagram.com/">
+                                            <!-- Img -->
+                                            <img class = "img-fluid" src = "../Images/Blogs/In.png" alt = "In">
+                                        </a>
+                                        <!-- A -->
+                                        <a class = "viber" href = "https://www.viber.com/en/">
+                                            <!-- Img -->
+                                            <img class = "img-fluid" src = "../Images/Blogs/Vi.png" alt = "Vi">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>  
+
+
+    </body>
+
+
+</html>

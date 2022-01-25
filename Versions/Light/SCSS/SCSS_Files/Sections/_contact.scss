@@ -1,0 +1,1560 @@
+/* 
+
+TABLE OF CONTENTS
+
+1. Contact
+ 1.1 Content
+  1.1.1 Heading
+   1.1.1.1 h2
+  1.1.2 Contact Area
+   1.1.2.1 Left
+    1.1.2.1.1 Email
+     1.1.2.1.1.1 H3
+     1.1.2.1.1.2 Img
+    1.1.2.1.2 Location
+     1.1.2.1.2.1 H3
+     1.1.2.1.2.2 Img
+    1.1.2.1.3 Logo
+     1.1.2.1.3.1 H2
+    1.1.2.1.4 Phone
+     1.1.2.1.4.1 H3
+     1.1.2.1.4.2 Img
+   1.1.2.2 Right
+    1.1.2.2.1 Form
+     1.1.2.2.1.1 Button
+     1.1.2.2.1.2 Form Wrapper
+      1.1.2.2.1.2.1 Mail Area
+       1.1.2.2.1.2.1.1 Mail Field
+      1.1.2.2.1.2.2 Message Area
+       1.1.2.2.1.2.2.1 Message Field
+      1.1.2.2.1.2.3 Name Area
+       1.1.2.2.1.2.3.1 Name Field
+      1.1.2.2.1.2.4 Phone Area
+       1.1.2.2.1.2.4.1 Phone Field
+     1.1.2.2.1.3 Messages
+      1.1.2.2.1.3.1 Error
+2. Media Queries
+
+*/
+
+
+// Section Contact
+.contact {
+    display:none;
+    // Content
+    .content {
+        padding:120px 120px 120px 120px;
+        // Contact Area
+        .contactArea {
+            align-items:center;
+            display:flex;
+            margin-top:202px;
+            // Left
+            .left {
+                // Email
+                .email {
+                    align-items:center;
+                    display:flex;
+                    margin:0;
+                    margin-top:34px;
+                    padding:0;
+                    // H3
+                    h3 {
+                        color:$headerBikem;
+                        display:inline;
+                        font-family:rajdhani;
+                        margin:0;
+                        margin-left:36px;
+                        padding:0;
+                    }
+                    // Img
+                    img {
+                        margin:0;
+                        padding:0;
+                    }
+                }
+                // Location
+                .location {
+                    align-items:center;
+                    display:flex;
+                    margin:0;
+                    padding:0;
+                    // H3
+                    h3 {
+                        color:$headerBikem;
+                        display:inline;
+                        font-family:rajdhani;
+                        margin:0;
+                        margin-left:36px;
+                        padding:0;
+                    }
+                    // Img
+                    img {
+                        margin:0;
+                        padding:0;
+                    }
+                }
+                // Logo
+                .logo {
+                    margin-top:79px;
+                    // H2
+                    h2 {
+                        color:$menu;
+                        display:inline-block;
+                        font-family:raleway_dots;
+                        font-size:115px;
+                        margin:0;
+                        padding:0;
+                    }
+                }
+                // Phone
+                .phone {
+                    align-items:center;
+                    display:flex;
+                    margin:0;
+                    margin-top:34px;
+                    padding:0;
+                    // H3
+                    h3 {
+                        color:$headerBikem;
+                        display:inline;
+                        font-family:rajdhani;
+                        margin:0;
+                        margin-left:36px;
+                        padding:0;
+                    }
+                    // Img
+                    img {
+                        margin:0;
+                        padding:0;
+                    }
+                }
+            }
+            // Right
+            .right {
+                // Form
+                form {
+                    // Button
+                    .button {
+                        background:transparent;
+                        border:1.2px solid;
+                        border-color:$red;
+                        color:$darker;
+                        font-family:jura;
+                        font-size:29px;
+                        margin-top:96px;
+                        padding-bottom:37px;
+                        padding-left:71px;
+                        padding-right:71px;
+                        padding-top:37px;
+                    }
+                    // Form Wrapper
+                    .formWrapper {
+                        // Mail Area
+                        .mailArea {
+                            display:flex;
+                            justify-content:end;
+                            // Input
+                            input[type = email] {
+                                padding-bottom:5px;
+                            }
+                            // Mail Field
+                            .mailField {
+                                background:$lightVersion;
+                                border-bottom:0.6px solid;
+                                border-color:$darker;
+                                border-left:none;
+                                border-right:none;
+                                border-top:none;
+                                color:$darker;
+                                font-family:jura;
+                                font-size:29px;
+                                margin:0;
+                                outline:none;
+                                padding:0;
+                                width:360px;
+                            }
+                            ::-moz-placeholder {
+                                color:$darker;
+                                opacity:1;
+                            }
+                        }
+                        // Message Area
+                        .messageArea {
+                            margin-top:190px;
+                            // Message Field
+                            .messageField {
+                                background:$lightVersion;
+                                border-bottom:0.6px solid;
+                                border-color:$darker;
+                                border-left:none;
+                                border-right:none;
+                                border-top:none;
+                                color:$darker;
+                                font-family:jura;
+                                font-size:29px;
+                                height:53px;
+                                margin:0;
+                                outline:none;
+                                padding:0;
+                                width:100%;
+                            }
+                            ::-moz-placeholder {
+                                color:$darker;
+                                opacity:1;
+                            }
+                              
+                        }
+                        // Name Area
+                        .nameArea {
+                            // Input
+                            input[type = text] {
+                                padding-bottom:5px;
+                            }
+                            ::-moz-placeholder {
+                                color:$darker;
+                                opacity:1;
+                            }
+                            // Name Field
+                            .nameField {
+                                background:$lightVersion;
+                                border-bottom:0.6px solid;
+                                border-color:$darker;
+                                border-left:none;
+                                border-right:none;
+                                border-top:none;
+                                color:$darker;
+                                font-family:jura;
+                                font-size:29px;
+                                margin:0;
+                                outline:none;
+                                padding:0;
+                                width:360px;
+                            }
+                        }
+                        // Phone Area
+                        .phoneArea {
+                            margin-top:74px;
+                            // Input
+                            input[type = text] {
+                                padding-bottom:5px;
+                            }
+                            ::-moz-placeholder {
+                                color:$darker;
+                                opacity:1;
+                            }
+                            // Phone Field
+                            .phoneField {
+                                background:$lightVersion;
+                                border-bottom:0.6px solid;
+                                border-color:$darker;
+                                border-left:none;
+                                border-right:none;
+                                border-top:none;
+                                color:$darker;
+                                font-family:jura;
+                                font-size:29px;
+                                margin:0;
+                                outline:none;
+                                padding:0;
+                                width:100%;
+                            }
+                        }
+                    }
+                    // Messages
+                    .msgs {
+                        // Error
+                        .error {
+                            background:$error;
+                            color:$black;
+                            font-family:rajdhani;
+                            font-size:20px;
+                            padding:0;
+                            position:relative;
+                            text-align:center;
+                            top:10px;
+                            transition:all 0.5s ease;
+                        }
+                        // Submitted
+                        .submitted {
+                            background:$submitted;
+                            color:$black;
+                            font-family:rajdhani;
+                            font-size:20px;
+                            padding:0;
+                            position:relative;
+                            text-align:center;
+                            top:10px;
+                            transition:all 0.5s ease;
+                        }
+                    }
+                }
+            }
+        }
+        // Heading
+        .heading {
+            display:flex;
+            justify-content:start;
+            // H2
+            h2 {
+                color:$headerBikem;
+                display:inline-block;
+                font-family:megrim;
+                font-size:144px;
+                margin:0;
+                padding:0;
+            }
+        }
+    }
+}
+
+
+// Work with Different Screen Sizes
+@media (min-height:301px) and (max-height:325px) and (min-width:226px) and (max-width:250px) {
+    .contact {
+        .content {
+            padding-bottom:118px !important;
+        }
+    }
+}
+
+
+@media (min-height:476px) and (max-height:500px) and (min-width:301px) and (max-width:325px) {
+    .contact {
+        .content {
+            padding-bottom:81px !important;
+        }
+    }
+}
+
+
+@media (min-height:526px) and (max-height:550px) and (min-width:301px) and (max-width:325px) {
+    .contact {
+        .content {
+            padding-bottom:81px !important;
+        }
+    }
+}
+
+
+@media (min-height:551px) and (max-height:575px) and (min-width:301px) and (max-width:325px) {
+    .contact {
+        .content {
+            padding-bottom:81px !important;
+        }
+    }
+}
+
+
+@media (min-height:576px) and (max-height:600px) and (min-width:1001px) and (max-width:1025px) {
+    .contact {
+        .content {
+            padding-bottom:99px !important;
+        }
+    }
+}
+
+
+@media (min-height:626px) and (max-height:650px) and (min-width:351px) and (max-width:375px) {
+    .contact {
+        .content {
+            padding-bottom:82px !important;
+        }
+    }
+}
+
+@media (min-height:626px) and (max-height:650px) and (min-width:376px) and (max-width:400px) {
+    .contact {
+        .content {
+            padding-bottom:82px !important;
+        }
+    }
+}
+
+
+@media (min-height:651px) and (max-height:675px) and (min-width:276px) and (max-width:300px) {
+    .contact {
+        .content {
+            padding-bottom:116px !important;
+        }
+    }
+}
+
+
+@media (min-height:651px) and (max-height:675px) and (min-width:351px) and (max-width:375px) {
+    .contact {
+        .content {
+            padding-bottom:82px !important;
+        }
+    }
+}
+
+
+@media (min-height:701px) and (max-height:725px) and (min-width:526px) and (max-width:550px) {
+    .contact {
+        .content {
+            padding-bottom:82px !important;
+        }
+    }
+}
+
+
+@media (min-height:726px) and (max-height:750px) and (min-width:401px) and (max-width:425px) {
+    .contact {
+        .content {
+            padding-bottom:83px !important;
+        }
+    }
+}
+
+
+@media (min-height:801px) and (max-height:825px) and (min-width:351px) and (max-width:375px) {
+    .contact {
+        .content {
+            padding-bottom:83px !important;
+        }
+    }
+}
+
+
+@media (min-height:801px) and (max-height:825px) and (min-width:401px) and (max-width:425px) {
+    .contact {
+        .content {
+            padding-bottom:83px !important;
+        }
+    }
+}
+
+
+@media (min-height:851px) and (max-height:875px) and (min-width:476px) and (max-width:500px) {
+    .contact {
+        .content {
+            padding-bottom:83px !important;
+        }
+    }
+}
+
+
+@media (min-height:876px) and (max-height:900px) and (min-width:401px) and (max-width:425px) {
+    .contact {
+        .content {
+            padding-bottom:86px !important;
+        }
+    }
+}
+
+
+@media (min-height:901px) and (max-height:925px) and (min-width:401px) and (max-width:425px) {
+    .contact {
+        .content {
+            padding-bottom:86px !important;
+        }
+    }
+}
+
+
+@media (min-height:926px) and (max-height:950px) and (min-width:426px) and (max-width:450px) {
+    .contact {
+        .content {
+            padding-bottom:86px !important;
+        }
+    }
+}
+
+
+@media (min-height:951px) and (max-height:975px) and (min-width:576px) and (max-width:600px) {
+    .contact {
+        .content {
+            padding-bottom:128px !important;
+        }
+    }
+}
+
+
+@media (min-height:1001px) and (max-height:1025px) and (min-width:751px) and (max-width:775px) {
+    .contact {
+        .content {
+            padding-bottom:125px !important;
+        }
+    }
+}
+
+
+@media (min-height:1076px) and (max-height:1100px) and (min-width:801px) and (max-width:825px) {
+    .contact {
+        .content {
+            padding-bottom:128px !important;
+        }
+    }
+}
+
+
+@media (min-height:1176px) and (max-height:1200px) and (min-width:801px) and (max-width:825px) {
+    .contact {
+        .content {
+            padding-bottom:128px !important;
+        }
+    }
+}
+
+
+@media (min-height:1176px) and (max-height:1200px) and (min-width:826px) and (max-width:850px) {
+    .contact {
+        .content {
+            padding-bottom:128px !important;
+        }
+    }
+}
+
+
+@media (min-height:1251px) and (max-height:1300px) and (min-width:776px) and (max-width:800px) {
+    .contact {
+        .content {
+            padding-bottom:128px !important;
+        }
+    }
+}
+
+
+@media (min-height:1276px) and (max-height:1300px) and (min-width:776px) and (max-width:800px) {
+    .contact {
+        .content {
+            padding-bottom:125px !important;
+        }
+    }
+}
+
+
+@media (min-height:1351px) and (max-height:1375px) and (min-width:1001px) and (max-width:1025px) {
+    .contact {
+        .content {
+            padding-bottom:99px !important;
+        }
+    }
+}
+
+
+@media (max-width:300px) {
+    .contact {
+        .content {
+            padding:75px 25px 121px 25px;
+            .contactArea {
+                margin-top:120px;
+                .left {
+                    display:flex;
+                    justify-content:center;
+                    .email {
+                        h3 {
+                            font-size:16px;
+                            margin-left:20px;
+                        }
+                        img {
+                            height:auto;
+                            width:30px;
+                        }
+                    }
+                    .location {
+                        h3 {
+                            font-size:16px;
+                            margin-left:20px;
+                        }
+                        img {
+                            height:auto;
+                            width:30px;
+                        }
+                    }
+                    .logo {
+                        display:flex;
+                        justify-content:center;
+                        position:relative;
+                        top:650px;
+                        h2 {
+                            font-size:61px;
+                            margin-bottom:75px;
+                            text-align:center;
+                        }
+                    }
+                    .phone {
+                        h3 {
+                            font-size:16px;
+                            margin-left:20px;
+                        }
+                        img {
+                            height:auto;
+                            width:30px;
+                        }
+                    }
+                }
+                .right {
+                    bottom:125px;
+                    position:relative;
+                    form {
+                        .button {
+                            font-size:18px;
+                            padding-bottom:20px;
+                            padding-left:54px;
+                            padding-right:54px;
+                            padding-top:20px;
+                        }
+                        .formWrapper {
+                            .mailArea {
+                                .mailField {
+                                    font-size:15px;
+                                    width:95%;
+                                }
+                            }
+                            .messageArea {
+                                .messageField {
+                                    font-size:15px;
+                                }
+                            }
+                            .nameArea {
+                                .nameField {
+                                    font-size:15px;
+                                    width:95%;
+                                }
+                            }
+                            .phoneArea {
+                                .phoneField {
+                                    font-size:15px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .heading {
+                display:flex;
+                justify-content:center;
+                h2 {
+                    font-size:50px;
+                    text-align:center;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:301px) and (max-width:425px) {
+    .contact {
+        .content {
+            padding:75px 25px 85px 25px;
+            .contactArea {
+                margin-top:120px;
+                .left {
+                    display:flex;
+                    justify-content:center;
+                    .email {
+                        h3 {
+                            font-size:20px;
+                            margin-left:20px;
+                        }
+                        img {
+                            height:auto;
+                            width:30px;
+                        }
+                    }
+                    .location {
+                        h3 {
+                            font-size:20px;
+                            margin-left:20px;
+                        }
+                        img {
+                            height:auto;
+                            width:30px;
+                        }
+                    }
+                    .logo {
+                        display:flex;
+                        justify-content:center;
+                        position:relative;
+                        top:650px;
+                        h2 {
+                            font-size:67px;
+                            margin-bottom:75px;
+                            text-align:center;
+                        }
+                    }
+                    .phone {
+                        h3 {
+                            font-size:20px;
+                            margin-left:20px;
+                        }
+                        img {
+                            height:auto;
+                            width:30px;
+                        }
+                    }
+                }
+                .right {
+                    bottom:125px;
+                    position:relative;
+                    form {
+                        .button {
+                            font-size:24px;
+                            padding-bottom:26px;
+                            padding-left:60px;
+                            padding-right:60px;
+                            padding-top:26px;
+                        }
+                        .formWrapper {
+                            .mailArea {
+                                .mailField {
+                                    font-size:21px;
+                                    width:95%;
+                                }
+                            }
+                            .messageArea {
+                                .messageField {
+                                    font-size:21px;
+                                }
+                            }
+                            .nameArea {
+                                .nameField {
+                                    font-size:21px;
+                                    width:95%;
+                                }
+                            }
+                            .phoneArea {
+                                .phoneField {
+                                    font-size:21px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .heading {
+                display:flex;
+                justify-content:center;
+                h2 {
+                    font-size:75px;
+                    text-align:center;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:426px) and (max-width:550px) {
+    .contact {
+        .content {
+            padding:75px 25px 85px 25px;
+            .contactArea {
+                margin-top:120px;
+                .left {
+                    display:flex;
+                    justify-content:center;
+                    .email {
+                        h3 {
+                            font-size:20px;
+                            margin-left:20px;
+                        }
+                        img {
+                            height:auto;
+                            width:30px;
+                        }
+                    }
+                    .location {
+                        h3 {
+                            font-size:20px;
+                            margin-left:20px;
+                        }
+                        img {
+                            height:auto;
+                            width:30px;
+                        }
+                    }
+                    .logo {
+                        display:flex;
+                        justify-content:center;
+                        position:relative;
+                        top:650px;
+                        h2 {
+                            font-size:67px;
+                            margin-bottom:75px;
+                            text-align:center;
+                        }
+                    }
+                    .phone {
+                        h3 {
+                            font-size:20px;
+                            margin-left:20px;
+                        }
+                        img {
+                            height:auto;
+                            width:30px;
+                        }
+                    }
+                }
+                .right {
+                    bottom:125px;
+                    position:relative;
+                    form {
+                        .button {
+                            font-size:24px;
+                            padding-bottom:26px;
+                            padding-left:60px;
+                            padding-right:60px;
+                            padding-top:26px;
+                        }
+                        .formWrapper {
+                            .mailArea {
+                                .mailField {
+                                    font-size:21px;
+                                    width:95%;
+                                }
+                            }
+                            .messageArea {
+                                .messageField {
+                                    font-size:21px;
+                                }
+                            }
+                            .nameArea {
+                                .nameField {
+                                    font-size:21px;
+                                    width:95%;
+                                }
+                            }
+                            .phoneArea {
+                                .phoneField {
+                                    font-size:21px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .heading {
+                display:flex;
+                justify-content:center;
+                h2 {
+                    font-size:75px;
+                    text-align:center;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:551px) and (max-width:851px) {
+    .contact {
+        .content {
+            padding:75px 109px 124px 109px;
+            .contactArea {
+                margin-top:120px;
+                .left {
+                    display:flex;
+                    justify-content:center;
+                    .email {
+                        h3 {
+                            font-size:27px;
+                            margin-left:20px;
+                        }
+                    }
+                    .location {
+                        h3 {
+                            font-size:27px;
+                            margin-left:20px;
+                        }
+                    }
+                    .logo {
+                        display:flex;
+                        justify-content:center;
+                        position:relative;
+                        top:725px;
+                        h2 {
+                            font-size:72px;
+                            margin-bottom:75px;
+                            text-align:center;
+                        }
+                    }
+                    .phone {
+                        h3 {
+                            font-size:27px;
+                            margin-left:20px;
+                        }
+                    }
+                }
+                .right {
+                    bottom:125px;
+                    position:relative;
+                    form {
+                        .button {
+                            font-size:29px;
+                            padding-bottom:31px;
+                            padding-left:65px;
+                            padding-right:65px;
+                            padding-top:31px;
+                        }
+                        .formWrapper {
+                            .mailArea {
+                                .mailField {
+                                    font-size:26px;
+                                    width:95%;
+                                }
+                            }
+                            .messageArea {
+                                .messageField {
+                                    font-size:26px;
+                                }
+                            }
+                            .nameArea {
+                                .nameField {
+                                    font-size:26px;
+                                    width:95%;
+                                }
+                            }
+                            .phoneArea {
+                                .phoneField {
+                                    font-size:26px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .heading {
+                display:flex;
+                justify-content:center;
+                h2 {
+                    font-size:75px;
+                    text-align:center;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:852px) and (max-width:1199px) {
+    .contact {
+        .content {
+            padding:75px 109px 103px 109px;
+            .contactArea {
+                margin-top:120px;
+                .left {
+                    display:flex;
+                    justify-content:center;
+                    .email {
+                        h3 {
+                            margin-left:20px;
+                        }
+                    }
+                    .location {
+                        h3 {
+                            margin-left:20px;
+                        }
+                    }
+                    .logo {
+                        display:flex;
+                        justify-content:center;
+                        position:relative;
+                        top:725px;
+                        h2 {
+                            font-size:72px;
+                            margin-bottom:75px;
+                            text-align:center;
+                        }
+                    }
+                    .phone {
+                        h3 {
+                            margin-left:20px;
+                        }
+                    }
+                }
+                .right {
+                    bottom:125px;
+                    position:relative;
+                    form {
+                        .button {
+                            padding-bottom:37px;
+                            padding-left:71px;
+                            padding-right:71px;
+                            padding-top:37px;
+                        }
+                        .formWrapper {
+                            .mailArea {
+                                .mailField {
+                                    width:95%;
+                                }
+                            }
+                            .nameArea {
+                                .nameField {
+                                    width:95%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .heading {
+                display:flex;
+                justify-content:center;
+                h2 {
+                    font-size:75px;
+                    text-align:center;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:1200px) and (max-width:1475px) {
+    .contact {
+        .content {
+            .contactArea {
+                .left {
+                    .logo {
+                     h2 {
+                         font-size:78px;
+                     }
+                    }
+                }
+                .right {
+                    form {
+                        .button {
+                            padding-bottom:37px;
+                            padding-left:71px;
+                            padding-right:71px;
+                            padding-top:37px;
+                        }
+                        .formWrapper {
+                            .mailArea {
+                                .mailField {
+                                    width:225px;
+                                }
+                            }
+                            .nameArea {
+                                .nameField {
+                                    width:225px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .heading {
+                h2 {
+                    font-size:119px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:1476px) and (max-width:1745px) {
+    .contact {
+        .content {
+            .contactArea {
+                .left {
+                    .logo {
+                     h2 {
+                         font-size:78px;
+                     }
+                    }
+                }
+                .right {
+                    form {
+                        .button {
+                            padding-bottom:37px;
+                            padding-left:71px;
+                            padding-right:71px;
+                            padding-top:37px;
+                        }
+                        .formWrapper {
+                            .mailArea {
+                                .mailField {
+                                    width:300px;
+                                }
+                            }
+                            .nameArea {
+                                .nameField {
+                                    width:300px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .heading {
+                h2 {
+                    font-size:131px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:1921px) and (max-width:2400px) {
+    .contact {
+        .content {
+            padding:150px 150px 150px 150px;
+            .contactArea {
+                margin-top:252px;
+                .left {
+                    .email {
+                        margin-top:42px;
+                        h3 {
+                            margin-left:45px;
+                        }
+                        img {
+                            height:auto;
+                            width:57px;
+                        }
+                    }
+                    .location {
+                        h3 {
+                            margin-left:45px;
+                        }
+                        img {
+                            height:auto;
+                            width:57px;
+                        }
+                    }
+                    .logo {
+                        margin-top:98px;
+                        h2 {
+                            font-size:143px;
+                        }
+                    }
+                    .phone {
+                        margin-top:42px;
+                        h3 {
+                            margin-left:45px;
+                        }
+                        img {
+                            height:auto;
+                            width:57px;
+                        }
+                    }
+                }
+                .right {
+                    form {
+                        .button {
+                            border:1.5px solid;
+                            font-size:36px;
+                            margin-top:120px;
+                            padding-bottom:46px;
+                            padding-left:88px;
+                            padding-right:88px;
+                            padding-top:46px;
+                        }
+                        .formWrapper {
+                            .mailArea {
+                                input[type = email] {
+                                    padding-bottom:6.2px;
+                                }
+                                .mailField {
+                                    border-bottom:0.75px solid;
+                                    font-size:36px;
+                                    width:450px;
+                                }
+                            }
+                            .messageArea {
+                                margin-top:237px;
+                                .messageField {
+                                    border-bottom:0.75px solid;
+                                    font-size:36px;
+                                    height:66px;
+                                }
+                            }
+                            .nameArea {
+                                input[type = text] {
+                                    padding-bottom:6.2px;
+                                }
+                                .nameField {
+                                    border-bottom:0.75px solid;
+                                    font-size:36px;
+                                    width:450px;
+                                }
+                            }
+                            .phoneArea {
+                                margin-top:92px;
+                                input[type = text] {
+                                    padding-bottom:6.2px;
+                                }
+                                .phoneField {
+                                    border-bottom:0.75px solid;
+                                    font-size:36px;
+                                }
+                            }
+                        }
+                        .msgs {
+                            .error {
+                                font-size:25px;
+                                top:12.5px;
+                            }
+                            .submitted {
+                                font-size:25px;
+                                top:12.5px;
+                            }
+                        }
+                    }
+                }
+            }
+            .heading {
+                h2 {
+                    font-size:180px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:2401px) and (max-width:3000px) {
+    .contact {
+        .content {
+            padding:187px 187px 187px 187px;
+            .contactArea {
+                margin-top:315px;
+                .left {
+                    .email {
+                        margin-top:52px;
+                        h3 {
+                            margin-left:56px;
+                        }
+                        img {
+                            height:auto;
+                            width:71px;
+                        }
+                    }
+                    .location {
+                        h3 {
+                            margin-left:56px;
+                        }
+                        img {
+                            height:auto;
+                            width:71px;
+                        }
+                    }
+                    .logo {
+                        margin-top:122px;
+                        h2 {
+                            font-size:178px;
+                        }
+                    }
+                    .phone {
+                        margin-top:52px;
+                        h3 {
+                            margin-left:56px;
+                        }
+                        img {
+                            height:auto;
+                            width:71px;
+                        }
+                    }
+                }
+                .right {
+                    form {
+                        .button {
+                            border:1.87px solid;
+                            font-size:45px;
+                            margin-top:150px;
+                            padding-bottom:57px;
+                            padding-left:110px;
+                            padding-right:110px;
+                            padding-top:57px;
+                        }
+                        .formWrapper {
+                            .mailArea {
+                                input[type = email] {
+                                    padding-bottom:7.7px;
+                                }
+                                .mailField {
+                                    border-bottom:0.93px solid;
+                                    font-size:45px;
+                                    width:563px;
+                                }
+                            }
+                            .messageArea {
+                                margin-top:296px;
+                                .messageField {
+                                    border-bottom:0.93px solid;
+                                    font-size:45px;
+                                    height:82px;
+                                }
+                            }
+                            .nameArea {
+                                input[type = text] {
+                                    padding-bottom:7.7px;
+                                }
+                                .nameField {
+                                    border-bottom:0.93px solid;
+                                    font-size:45px;
+                                    width:563px;
+                                }
+                            }
+                            .phoneArea {
+                                margin-top:115px;
+                                input[type = text] {
+                                    padding-bottom:7.7px;
+                                }
+                                .phoneField {
+                                    border-bottom:0.93px solid;
+                                    font-size:45px;
+                                }
+                            }
+                        }
+                        .msgs {
+                            .error {
+                                font-size:31px;
+                                top:15.6px;
+                            }
+                            .submitted {
+                                font-size:31px;
+                                top:15.6px;
+                            }
+                        }
+                    }
+                }
+            }
+            .heading {
+                h2 {
+                    font-size:225px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:3001px) and (max-width:3750px) {
+    .contact {
+        .content {
+            padding:234px 234px 234px 234px;
+            .contactArea {
+                margin-top:394px;
+                .left {
+                    .email {
+                        margin-top:65px;
+                        h3 {
+                            margin-left:70px;
+                        }
+                        img {
+                            height:auto;
+                            width:88px;
+                        }
+                    }
+                    .location {
+                        h3 {
+                            margin-left:70px;
+                        }
+                        img {
+                            height:auto;
+                            width:88px;
+                        }
+                    }
+                    .logo {
+                        margin-top:152px;
+                        h2 {
+                            font-size:223px;
+                        }
+                    }
+                    .phone {
+                        margin-top:65px;
+                        h3 {
+                            margin-left:70px;
+                        }
+                        img {
+                            height:auto;
+                            width:88px;
+                        }
+                    }
+                }
+                .right {
+                    form {
+                        .button {
+                            border:2.34px solid;
+                            font-size:56px;
+                            margin-top:187px;
+                            padding-bottom:70px;
+                            padding-left:137px;
+                            padding-right:137px;
+                            padding-top:70px;
+                        }
+                        .formWrapper {
+                            .mailArea {
+                                input[type = email] {
+                                    padding-bottom:9.6px;
+                                }
+                                .mailField {
+                                    border-bottom:1.16px solid;
+                                    font-size:56px;
+                                    width:704px;
+                                }
+                            }
+                            .messageArea {
+                                margin-top:370px;
+                                .messageField {
+                                    border-bottom:1.16px solid;
+                                    font-size:56px;
+                                    height:102px;
+                                }
+                            }
+                            .nameArea {
+                                input[type = text] {
+                                    padding-bottom:9.6px;
+                                }
+                                .nameField {
+                                    border-bottom:1.16px solid;
+                                    font-size:56px;
+                                    width:704px;
+                                }
+                            }
+                            .phoneArea {
+                                margin-top:144px;
+                                input[type = text] {
+                                    padding-bottom:9.6px;
+                                }
+                                .phoneField {
+                                    border-bottom:1.16px solid;
+                                    font-size:56px;
+                                }
+                            }
+                        }
+                        .msgs {
+                            .error {
+                                font-size:38px;
+                                top:19.5px;
+                            }
+                            .submitted {
+                                font-size:38px;
+                                top:19.5px;
+                            }
+                        }
+                    }
+                }
+            }
+            .heading {
+                h2 {
+                    font-size:281px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:3751px) {
+    .contact {
+        .content {
+            padding:293px 293px 293px 293px;
+            .contactArea {
+                margin-top:493px;
+                .left {
+                    .email {
+                        margin-top:81px;
+                        h3 {
+                            margin-left:87px;
+                        }
+                        img {
+                            height:auto;
+                            width:110px;
+                        }
+                    }
+                    .location {
+                        h3 {
+                            margin-left:87px;
+                        }
+                        img {
+                            height:auto;
+                            width:110px;
+                        }
+                    }
+                    .logo {
+                        margin-top:190px;
+                        h2 {
+                            font-size:279px;
+                        }
+                    }
+                    .phone {
+                        margin-top:81px;
+                        h3 {
+                            margin-left:87px;
+                        }
+                        img {
+                            height:auto;
+                            width:110px;
+                        }
+                    }
+                }
+                .right {
+                    form {
+                        .button {
+                            border:2.93px solid;
+                            font-size:69px;
+                            margin-top:234px;
+                            padding-bottom:87px;
+                            padding-left:171px;
+                            padding-right:171px;
+                            padding-top:87px;
+                        }
+                        .formWrapper {
+                            .mailArea {
+                                input[type = email] {
+                                    padding-bottom:12px;
+                                }
+                                .mailField {
+                                    border-bottom:1.45px solid;
+                                    font-size:70px;
+                                    width:880px;
+                                }
+                            }
+                            .messageArea {
+                                margin-top:463px;
+                                .messageField {
+                                    border-bottom:1.45px solid;
+                                    font-size:70px;
+                                    height:127px;
+                                }
+                            }
+                            .nameArea {
+                                input[type = text] {
+                                    padding-bottom:12px;
+                                }
+                                .nameField {
+                                    border-bottom:1.45px solid;
+                                    font-size:70px;
+                                    width:880px;
+                                }
+                            }
+                            .phoneArea {
+                                margin-top:180px;
+                                input[type = text] {
+                                    padding-bottom:12px;
+                                }
+                                .phoneField {
+                                    border-bottom:1.45px solid;
+                                    font-size:70px;
+                                }
+                            }
+                        }
+                        .msgs {
+                            .error {
+                                font-size:47px;
+                                top:24.3px;
+                            }
+                            .submitted {
+                                font-size:47px;
+                                top:24.3px;
+                            }
+                        }
+                    }
+                }
+            }
+            .heading {
+                h2 {
+                    font-size:351px;
+                }
+            }
+        }
+    }
+}

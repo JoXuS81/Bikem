@@ -1,0 +1,305 @@
+//Fonts
+// Architects Daughter
+@font-face {
+    font-family:architectsDaughter;
+    src:url("../Fonts/Architects_Daughter/ArchitectsDaughter-Regular.ttf");
+  }
+  
+// Merienda
+@font-face {
+    font-family:merienda;
+    src:url("../Fonts/Merienda/Merienda-Regular.ttf");
+}
+
+// Permanent Marker
+@font-face {
+    font-family:permanentMarker;
+    src:url("../Fonts/Permanent_Marker/PermanentMarker-Regular.ttf");
+}
+
+// Righteous
+@font-face {
+    font-family:righteous;
+    src:url("../Fonts/Righteous/Righteous-Regular.ttf");
+}
+
+
+@mixin a {
+    font-size:20px;
+}
+@mixin h1 {
+    color:$white;
+    font-family:righteous;
+    font-size:50px;
+    margin:0;
+    padding:0;
+}
+@mixin h2 {
+    color:$white;
+    font-family:righteous;
+    font-size:40px;
+    margin:0;
+}
+@mixin h3 {
+    color:$white;
+    font-family:architectsDaughter;
+    font-size:28px;
+}
+@mixin h4 {
+    color:$black;
+    font-size:25px;
+}
+@mixin h5 {
+    color:$white;
+    font-family:permanentMarker;
+    font-size:22px;
+}
+@mixin h6 {
+    color:$white;
+    font-size:20px;
+}
+
+
+@mixin a_2400 {
+    font-size:25px;
+}
+// Mixins
+@mixin h1_2400 {
+    font-size:62px;
+}
+@mixin h2_2400 {
+    font-size:50px;
+}
+@mixin h3_2400 {
+    font-size:35px;
+}
+@mixin h4_2400 {
+    font-size:31px;
+}
+@mixin h5_2400 {
+    font-size:27px;
+}
+@mixin h6_2400 {
+    font-size:25px;
+}
+
+
+@mixin a_3000 {
+    font-size:31px;
+}
+// Mixins
+@mixin h1_3000 {
+    font-size:77px;
+}
+@mixin h2_3000 {
+    font-size:62px;
+}
+@mixin h3_3000 {
+    font-size:43px;
+}
+@mixin h4_3000 {
+    font-size:38px;
+}
+@mixin h5_3000 {
+    font-size:33px;
+}
+@mixin h6_3000 {
+    font-size:31px;
+}
+
+
+@mixin a_3750 {
+    font-size:38px;
+}
+// Mixins
+@mixin h1_3750 {
+    font-size:96px;
+}
+@mixin h2_3750 {
+    font-size:77px;
+}
+@mixin h3_3750 {
+    font-size:53px;
+}
+@mixin h4_3750 {
+    font-size:47px;
+}
+@mixin h5_3750 {
+    font-size:41px;
+}
+@mixin h6_3750 {
+    font-size:38px;
+}
+
+
+@mixin a_large {
+    font-size:47px;
+}
+// Mixins
+@mixin h1_large {
+    font-size:120px;
+}
+@mixin h2_large {
+    font-size:96px;
+}
+@mixin h3_large {
+    font-size:66px;
+}
+@mixin h4_large {
+    font-size:58px;
+}
+@mixin h5_large {
+    font-size:51px;
+}
+@mixin h6_large {
+    font-size:47px;
+}
+
+
+// Variables
+$black:#000000;
+$blog_dark:#272828;
+$dark:#131414;
+$red:#ff0066;
+$shadow:rgba(39, 40, 40, 0.2);
+$shadowBlue:rgba(0, 36, 81, 0.2);
+$white:#ffffff;
+
+
+/* BODY */
+body {
+    background:$blog_dark;
+    margin:0;
+    overflow-x:hidden;
+    padding:0;
+    a {
+        @include a;
+    }
+    h1 {
+        @include h1;
+    }
+    h2 {
+        @include h2;
+    }
+    h3 {
+        @include h3;
+    }
+    h4 {
+        @include h4;
+    }
+    h5 {
+        @include h5;
+    }
+    h6 {
+        @include h6;
+    }
+    @import "section";
+}
+
+
+@media (min-width:1921px) and (max-width:2400px) {
+    body {
+        a {
+            @include a_2400;
+        }
+        h1 {
+            @include h1_2400;
+        }
+        h2 {
+            @include h2_2400;
+        }
+        h3 {
+            @include h3_2400;
+        }
+        h4 {
+            @include h4_2400;
+        }
+        h5 {
+            @include h5_2400;
+        }
+        h6 {
+            @include h6_2400;
+        }
+    }
+}
+
+
+@media (min-width:2401px) and (max-width:3000px) {
+    body {
+        a {
+            @include a_3000;
+        }
+        h1 {
+            @include h1_3000;
+        }
+        h2 {
+            @include h2_3000;
+        }
+        h3 {
+            @include h3_3000;
+        }
+        h4 {
+            @include h4_3000;
+        }
+        h5 {
+            @include h5_3000;
+        }
+        h6 {
+            @include h6_3000;
+        }
+    }
+}
+
+
+@media (min-width:3001px) and (max-width:3750px) {
+    body {
+        a {
+            @include a_3750;
+        }
+        h1 {
+            @include h1_3750;
+        }
+        h2 {
+            @include h2_3750;
+        }
+        h3 {
+            @include h3_3750;
+        }
+        h4 {
+            @include h4_3750;
+        }
+        h5 {
+            @include h5_3750;
+        }
+        h6 {
+            @include h6_3750;
+        }
+    }
+}
+
+
+@media (min-width:3751px) {
+    body {
+        a {
+            @include a_large;
+        }
+        h1 {
+            @include h1_large;
+        }
+        h2 {
+            @include h2_large;
+        }
+        h3 {
+            @include h3_large;
+        }
+        h4 {
+            @include h4_large;
+        }
+        h5 {
+            @include h5_large;
+        }
+        h6 {
+            @include h6_large;
+        }
+    }
+}
