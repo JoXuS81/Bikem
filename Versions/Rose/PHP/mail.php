@@ -18,7 +18,7 @@ $message= $_POST['messageArea'];
 $to = "";
 $subject = "Mail from CreativY";
 $txt ="Name = ". $name . "\r\n  Email = " . $email . "\r\n Phone = " . $phone . "\r\n Message =" . $message;
-$headers = "From: CreativY" . "\r\n" .
+$headers = "From: Rose" . "\r\n" .
 "CC: somebodyelse@example.com";
 if($email!=NULL){
     mail($to,$subject,$txt,$headers);
