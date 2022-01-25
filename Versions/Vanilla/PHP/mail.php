@@ -16,7 +16,7 @@ $email= $_POST['mailArea'];
 $phone= $_POST['phoneArea'];
 $message= $_POST['messageArea'];
 $to = "";
-$subject = "Mail from CreativY";
+$subject = "Mail from Bikem";
 $txt ="Name = ". $name . "\r\n  Email = " . $email . "\r\n Phone = " . $phone . "\r\n Message =" . $message;
 $headers = "From: Bikem" . "\r\n" .
 "CC: somebodyelse@example.com";
